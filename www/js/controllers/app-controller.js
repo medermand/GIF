@@ -14,9 +14,38 @@ controllers.controller('AppCtrl', function($scope, $rootScope, $state, $cordovaP
   //customPopup.showAlert('Meder','Meder kandai');
 
   $scope.video = function(id){
-    $rootScope.originalVideoPath = '';
-    console.log("video id is equal to: " + id);
-    $state.go('app.trim',{id: id});
+    if(id == 0){
+
+      /*In fact this method could be put in video-controller class, but for trimming process, the player needs to
+       know in advance the source of the video. So, here the source of the video is known and direct the page to trimming page.
+       Actually, this method is moved to video controller, and after getting the source, updated the html page, but it did
+       not work, there was no choice except getting the source of the video from here.
+      */
+      $ionicPlatform.ready(function () {
+
+        //https://github.com/rossmartin/cordova-plugin-instagram-assets-picker
+        InstagramAssetsPicker.getMedia(
+            function (result) { // success cb
+              console.log('getMedia success, result: ', JSON.stringify(result, null, 2));
+              $scope.$apply(function () {
+                $rootScope.originalVideoPath = result.filePath;
+                $state.go('app.trim',{id: id});
+              })
+            },
+            function (err) { // error cb
+              console.log('getMedia error, err: ', err);
+            },
+            { // options
+              type: 'video', // accepts 'photo', 'video', or 'all' - defaults to all
+              cropAfterSelect: false, // see the note above for when this is false - defaults to false
+              showGrid: true // determines whether to show the grid for cropping - defaults to false
+            }
+        );
+      })
+    }
+    else{
+      $state.go('app.trim',{id: id});
+    }
   }
 
   $scope.edit = function(){
