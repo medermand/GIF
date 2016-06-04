@@ -1,0 +1,136 @@
+<ion-view view-title="Settings">
+  <ion-content>
+     <ion-list>
+        <div>
+          <ion-item class="item-stable" ng-click="toggleGroup('themes')" ng-class="{active: isGroupShown('themes')}">
+            <i class="icon" ng-class="isGroupShown('themes') ? 'ion-minus' : 'ion-plus'"></i>
+            &nbsp;
+            Themes
+          </ion-item>
+
+          <ion-item class="item-accordion" ng-show="isGroupShown('themes')">
+            <div class="row padding">
+              <div class="col col-10 padding" style="background-color: #387ef5" on-tap="checkColor('positive')">
+                <i class="icon ion-checkmark-round" ng-show="isColorChecked('positive')"></i>
+              </div>
+              <div class="col col-10 padding" style="background-color: #11c1f3" on-tap="checkColor('calm')">
+                <i class="icon ion-checkmark-round" ng-show="isColorChecked('calm')"></i>
+              </div>
+              <div class="col col-10 padding" style="background-color: #33cd5f" on-tap="checkColor('balanced')">
+                <i class="icon ion-checkmark-round" ng-show="isColorChecked('balanced')"></i>
+              </div>
+              <div class="col col-10 padding" style="background-color: #ffc900" on-tap="checkColor('energized')">
+                <i class="icon ion-checkmark-round" ng-show="isColorChecked('energized')"></i>
+              </div>
+              <div class="col col-10 padding" style="background-color: #ef473a" on-tap="checkColor('assertive')">
+                <i class="icon ion-checkmark-round" ng-show="isColorChecked('assertive')"></i>
+              </div>
+              <div class="col col-10 padding" style="background-color: #886aea" on-tap="checkColor('royal')">
+                <i class="icon ion-checkmark-round" ng-show="isColorChecked('royal')"></i>
+              </div>
+              <div class="col col-10 padding" style="background-color: #444" on-tap="checkColor('dark')">
+                <i class="icon ion-checkmark-round" ng-show="isColorChecked('dark')"></i>
+              </div>
+            </div>
+          </ion-item>
+        </div>
+
+        <div>
+
+          <ion-item class="item-stable" ng-click="toggleGroup('technical')" ng-class="{active: isGroupShown('technical')}">
+            <i class="icon" ng-class="isGroupShown('technical') ? 'ion-minus' : 'ion-plus'"></i>
+            &nbsp;
+            Technical Details
+          </ion-item>
+
+          <ion-item class="item-accordion" ng-show="isGroupShown('technical')" style="position: relative;">
+          <div class="row padding">
+            <i class="icon ion-information-circled" on-tap="infoPopover($event, 0)"></i>
+             &nbsp;&nbsp;&nbsp;Save to camera roll 
+            <label class="toggle toggle-calm" style="position: absolute; right: 10px;">
+              <input type="checkbox" ng-model='cameraroll' ng-change="camerarollChange()">
+              <div class="track">
+                <div class="handle"></div>
+              </div>
+            </label>
+          </div>
+
+          <div class="row padding">
+            <i class="icon ion-information-circled" on-tap="infoPopover($event, 1)"></i>
+             &nbsp;&nbsp;&nbsp;Duplicate the edited gifs 
+            <label class="toggle toggle-calm" style="position: absolute; right: 10px;">
+              <input type="checkbox" ng-model='duplicate' ng-change="duplicateChange()">
+              <div class="track">
+                <div class="handle"></div>
+              </div>
+            </label>
+          </div>
+
+          <div class="row padding">
+            <i class="icon ion-information-circled" on-tap="infoPopover($event, 2)"></i>
+             &nbsp;&nbsp;&nbsp;Another setting 
+            <label class="toggle toggle-calm" style="position: absolute; right: 10px;">
+              <input type="checkbox" ng-model='another' ng-change="anotherChange()">
+              <div class="track">
+                <div class="handle"></div>
+              </div>
+            </label>
+          </div>
+          </ion-item>
+        </div>
+
+        <div>
+          <ion-item class="item-stable" ng-click="toggleGroup('info')" ng-class="{active: isGroupShown('info')}">
+            <i class="icon" ng-class="isGroupShown('info') ? 'ion-minus' : 'ion-plus'"></i>
+            &nbsp;
+            About Application
+          </ion-item>
+
+          <ion-item class="item-accordion" ng-show="isGroupShown('info')">
+
+            <div class="card">
+              <div class="item item-divider">
+                App Version:
+              </div>
+              <div class="item item-text-wrap">
+                Current Version: 1.0 and 1.1 is on the way...
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="item item-divider">
+                Term and Conditions:
+              </div>
+              <div class="item item-text-wrap">
+                There is no such a thing!
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="item item-divider">
+                Privacy Policy:
+              </div>
+              <div class="item item-text-wrap">
+                As yourself may have noticed; Gifer has nothing to do with your personal stuff including the things in your gallery.
+              </div>
+            </div>
+          </ion-item>
+        </div>
+
+        <div>
+          <ion-item class="item-stable" ng-click="toggleGroup('feedback')" ng-class="{active: isGroupShown('feedback')}">
+            <i class="icon" ng-class="isGroupShown('feedback') ? 'ion-minus' : 'ion-plus'"></i>
+            &nbsp;
+            FeedBack (Feel Free!)
+          </ion-item>
+
+          <ion-item class="item-accordion" ng-show="isGroupShown('feedback')">
+            <button class="button button-block button-calm">Rate Us on Store</button>
+            <p>Or you could just simply send us an e-mail below there!</p>
+            <button class="button button-block button-calm">Do the e-mail Thing</button>
+          </ion-item>
+        </div>
+
+      </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,72 @@
+<ion-view view-title="Gif via Photos">
+
+  <ion-nav-buttons side="right">
+    <button class="button button-clear button-small" ng-click="resizeAll()">
+      {{create ? 'Create Gif' : 'Save Gif'}}
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content class="">
+
+
+  </ion-content>
+  <img id="preview" ng-src="{{images[0]}}" width="{{gifWidth}}" hegiht="{{gifHeight}}" rel:animated_src="{{gifSrc}}"
+       rel:auto_play="1" style="position: absolute; top: {{imageTop}}px; left: {{imageLeft}}px">
+
+  <div id="editor" style="position: absolute; top: 50px; width: {{dev_width}}px; height: {{dev_height - 50}}px;"></div>
+
+  <div class="row top-tools" ng-show="showBottomBar">
+
+    <button class="button button-clear button-calm sticky-left" ng-click="resizePopup()">
+      <i class="icon ion-arrow-resize icon-center"></i>
+    </button>
+
+    <button class="button button-clear button-calm sticky-right" ng-click="adjustmentsPopup()">
+      <i class="icon ion-levels icon-center"></i>
+    </button>
+  </div>
+
+  <div class="bottom-tools" ng-show="showBottomBar">
+    <div class="row padding" style="text-align: center;">
+      <div class="" style="margin: auto;">
+        <button class="button button-calm button-small" ng-click="previous()"><i class="icon ion-skip-backward"></i>
+        </button>
+        <button class="button button-calm button-small" ng-click="playAndPause()"><i class="icon"
+                                                                                     ng-class="play ? 'ion-pause' : 'ion-play'"></i>
+        </button>
+        <button class="button button-calm button-small" ng-click="next()"><i class="icon ion-skip-forward"></i></button>
+      </div>
+    </div>
+    <div class="row no-padding">
+      <div class="col col-25 tab-content no-padding" on-tap="tabOne()" ng-class="{active: isTabActive('pictures')}">
+        {{isTabActive('pictures') ? 'Edit' : 'Pictures'}}
+      </div>
+      <div class="col col-25 tab-content no-padding" on-tap="tabTwo()" ng-class="{active: isTabActive('filters')}">
+        Filters
+      </div>
+      <div class="col col-25 tab-content no-padding" on-tap="tabThree()" ng-class="{active: isTabActive('add')}">
+        Add
+      </div>
+      <div class="col col-25 tab-content no-padding" on-tap="tabFour()" ng-class="{active: isTabActive('crop')}">
+        Crop
+      </div>
+    </div>
+    <div class="photo-sheets" ng-show="tabNumber == 1" style="width: 100vw; height: 54px;">
+      <ion-scroll direction="x" class="horizontal-scroll">
+        <img ng-repeat="image in resizedImages track by $index" ng-src="{{image}}" class="scroll-images"
+             on-tap="openImageEditor({{$index}})"/>
+      </ion-scroll>
+    </div>
+    <div class="tab-two" ng-show="tabNumber == 2" style="width: 100vw; height: 54px;">
+      <ion-scroll direction="x" class="horizontal-scroll">
+        <img ng-repeat="filter in filters track by $index" ng-src="img/filter.jpeg" class="scroll-images {{filter}}"
+             on-tap="applyCssFilter(filter)"/>
+      </ion-scroll>
+    </div>
+
+    <div class="tab-three" ng-show="tabNumber == 3" style="width: 100vw; height: 54px;"></div>
+    <div class="tab-four" ng-show="tabNumber == 4" style="width: 100vw; height: 54px;"></div>
+  </div>
+  </div>
+
+</ion-view>

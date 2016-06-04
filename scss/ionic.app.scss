@@ -1,0 +1,280 @@
+
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+*/
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+.top-image {
+  padding-top: 200px !important;
+}
+
+.slider {
+  height: 92vh !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+
+.slide-image {
+	height: auto;
+	width: 100%;
+	right: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+}
+
+.horizontal-scroll {
+  height:54px;
+  min-height: 54px;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.scroll-images {
+  height:50px;
+  width: 50px;
+  padding: 2px 1px 2px 1px;
+}
+
+.bottom-tools {
+  position: absolute;
+  bottom: 0px;
+}
+
+.top-tools {
+  position: fixed;
+  top: 50px;
+}
+
+.sticky-left {
+  position: fixed;
+  left: 25px;
+}
+
+.sticky-right {
+  position: fixed;
+  right: 25px;
+}
+
+.no-padding {
+  padding: 0px 0px 0px 0px;
+}
+
+.ion-scroll[direction=x] {
+  width: 100vw;
+}
+.ion-scroll[direction=y] {
+  height: 100vh;
+}
+
+.tab-content {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 15px;
+  color: $calm;
+  background-color: $stable;
+  text-align: center;
+}
+
+.active {
+  font-size: 12px;
+  color: $calm;
+  background-color: $dark;
+  text-align: center;
+}
+
+.app-color {
+  color: $calm;
+}
+
+
+
+
+
+
+
+
+
+
+
+.popup-container
+{
+  background-color: transparent;
+}
+
+.popup
+{
+  padding: 2px;
+  border-radius: 5px !important;
+}
+
+.popup-head
+{
+
+}
+
+.popup-title
+{
+    color: #575757;
+    font-size: 10px !important;
+    text-align: center;
+    font-weight: 600;
+    margin: 0px 0;
+    padding: 0;
+    line-height: 10px;
+}
+
+.popup-body
+{
+    color: #797979;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: inherit;
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: small;
+}
+
+.popup-buttons .button
+{
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 12px;
+    font-weight: 500;
+    -webkit-border-radius: 4px;
+    border-radius: 4px !important;
+    margin: 5px 5px 0 0px;
+}
+
+.popup-buttons .button.activated
+{
+  background-color: $calm;
+}
+
+
+
+
+
+
+
+
+
+
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+
+
+
+
+
+i.larger.ion-images {
+  font-size: 100px;
+}
+i.larger.ion-videocamera {
+  font-size: 100px;
+}
+i.larger.ion-edit {
+  font-size: 100px;
+}
+i.larger.ion-bug {
+  font-size: 100px;
+}
+i.large.ion-settings {
+  font-size: 100px;
+}
+i.larger.ion-film-marker {
+  font-size: 100px;
+}
+i.larger.ion-camera {
+  font-size: 100px;
+}
+.div-calm {
+  box-shadow: 2px 2px 1px grey;
+  border-radius: 15px;
+  text-align: center;
+  padding: 0px 5px 0px 5px;
+  border: 1px solid $dark;
+  color: $calm;
+}
+.float-right {
+  position: absolute;
+  right: 12px;
+}
+.float-left {
+  position: absolute;
+  left: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+progress[value] {
+    appearance: none;
+    border: none;
+
+    width: 100%; height: 20px;
+      background-color: whiteSmoke;
+      border-radius: 3px;
+      box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+
+    color: #11c1f3;
+
+    position: relative;
+    margin: 0 0 1.5em;
+}
+
+
+
+.blur {-webkit-filter: blur(4px);filter: blur(4px);}
+.brightness {-webkit-filter: brightness(0.30);filter: brightness(0.30);}
+.contrast {-webkit-filter: contrast(180%);filter: contrast(180%);}
+.grayscale {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);filter: hue-rotate(180deg);}
+.invert {-webkit-filter: invert(100%);filter: invert(100%);}
+.opacity {-webkit-filter: opacity(50%);filter: opacity(50%);}
+.saturate {-webkit-filter: saturate(7); filter: saturate(7);}
+.sepia {-webkit-filter: sepia(100%);filter: sepia(100%);}
+.shadow {-webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green);}

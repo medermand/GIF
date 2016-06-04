@@ -1,0 +1,20 @@
+<ion-modal-view>
+
+  <ion-header-bar align-title="center">
+    <h1 class="title">Crop</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="">
+        <i class=""></i>
+      </button>
+    </div>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="cropSheet()">
+        <i class="icon ion-checkmark-round icon-center"></i>
+      </button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content>
+    <img id="image" ng-src="{{gifSrc}}" width="{{dev_width}}" height="{{dev_height}}">
+  </ion-content>
+</ion-modal-view>

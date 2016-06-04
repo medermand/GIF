@@ -1,0 +1,56 @@
+
+<ion-view view-title="Menu">
+
+<ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-share" ng-click="share()">
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-settings" ng-click="settings()">
+    </button>
+  </ion-nav-buttons>
+<ion-nav-view name="menuContent"></ion-nav-view>
+
+<div class="row padding" style="position:absolute; top: 60px;">
+    <div class="col-50" style="position: relative;">
+      <div class="float-right div-calm padding" on-tap="photo(0)">
+        <i class="larger ion-images padding"></i>
+        <p class="">Library Photos</p>
+      </div>
+    </div>
+    <div class="col-50" style="position: relative;">
+      <div class="float-left div-calm padding" on-tap="video(0)">
+        <i class="larger ion-film-marker padding"></i>
+        <p>Library Videos</p>
+      </div>
+    </div>
+  </div>
+  <div class="row padding" style="position:absolute; top: 230px;">
+    <div class="col-50" style="position: relative;">
+      <div class="float-right div-calm padding" on-tap="photo(1)">
+        <i class="larger ion-camera padding"></i>
+        <p>Photo Camera</p>
+      </div>
+    </div>
+    <div class="col-50" style="position: relative;">
+      <div class="float-left div-calm padding" on-tap="video(1)">
+        <i class="larger ion-videocamera padding"></i>
+        <p>Video Camera</p>
+      </div>
+    </div>
+  </div>
+  <div class="row padding" style="position:absolute; top: 385px;">
+    <div class="col-50" style="position: relative;">
+      <div class="float-right div-calm padding" on-tap="edit()">
+        <i class="larger ion-edit padding"></i>
+        <p>Edit Gif</p>
+      </div>
+    </div>
+    <div class="col-50" style="position: relative;">
+      <div class="float-left div-calm padding" on-tap="browse()">
+        <i class="larger ion-bug padding"></i>
+        <p>My Work</p>
+      </div>
+    </div>
+  </div>
+</ion-view>

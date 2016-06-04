@@ -1,0 +1,136 @@
+<ion-modal-view>
+
+
+
+
+  <ion-header-bar align-title="center">
+    <h1 class="title">Edit Images</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="">
+        <i class=""></i>
+      </button>
+    </div>
+    <div class="buttons">
+      <button class="button button-clear button-calm" ng-click="cancelEditSheets()">
+        <i class="icon ion-checkmark-round icon-center"></i>
+      </button>
+    </div>
+  </ion-header-bar>
+
+  
+
+  <ion-content>
+
+  
+  <style>
+
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        [ng-drag] {
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        [ng-drag] {
+            width: 75px;
+            height: 75px;
+            background: rgba(255, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding-top: 40px;
+            display: block;
+            cursor: move;
+        }
+
+      
+
+        [ng-drag].drag-over {
+            border: solid 1px red;
+        }
+
+        [ng-drag].dragging {
+            opacity: 0.5;
+        }
+
+        [ng-drop] {
+            background: rgba(0, 0, 0, 0.25);
+            text-align: center;
+            display: block;
+            position: relative;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        [ng-drop].drag-enter {
+            border: solid 5px red;
+        }
+
+        [ng-drop] span.title {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 20px;
+            margin-left: -100px;
+            margin-top: -10px;
+        }
+
+        [ng-drop] div {
+            position: relative;
+            z-index: 2;
+        }
+
+        .draglist {
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .selected{
+            border: solid 4px green;
+        }
+  </style>
+
+
+
+  <div class="row" ng-repeat="image in resizedImages track by $index" ng-if="$index % 3 === 0"  >
+        <div class="col col-33" ng-if="$index < resizedImages.length" on-tap="select($index)" on-hold="scrollDisable()" on-release="scrollEnable()">
+            <img ng-src="{{resizedImages[$index]}}" width="100%" ng-drag="true"  ng-drag-data="resizedImages[$index]" ng-drop="true" ng-drop-success="onDropComplete($index, $data,$event)" ng-class="{selected: selectedImages[$index]}"/>
+        </div>
+
+        <div class="col col-33" ng-if="$index + 1 < resizedImages.length" on-tap="select($index + 1)" on-hold="scrollDisable()" on-release="scrollEnable()">
+            <img ng-src="{{resizedImages[$index + 1]}}" width="100%" ng-drag="true"  ng-drag-data="resizedImages[$index + 1]" ng-drop="true" ng-drop-success="onDropComplete($index + 1, $data,$event)" ng-class="{selected: selectedImages[$index + 1]}"/>
+        </div>
+
+        <div class="col col-33" ng-if="$index + 2 < resizedImages.length" on-tap="select($index + 2)" on-hold="scrollDisable()" on-release="scrollEnable()">
+            <img ng-src="{{resizedImages[$index + 2]}}" width="100%" ng-drag="true"  ng-drag-data="resizedImages[$index + 2]" ng-drop="true" ng-drop-success="onDropComplete($index + 2, $data,$event)" ng-class="{selected: selectedImages[$index + 2]}"/>
+        </div>
+        
+    </div>
+    
+
+  </ion-content>
+
+    
+
+    <div class="row" style="position: absolute; bottom: 0px;">
+        <div class="col col-33">
+            <button class="button button-calm button-small" on-tap="addMorePhotos()" style="width: 100%;">Add</button>
+        </div>
+        <div class="col col-33">
+            <button class="button button-calm button-small" on-tap="deleteSelectedItem()" style="width: 100%;">Delete</button>
+        </div>
+        <div class="col col-33">
+            <button class="button button-calm button-small" on-tap="setCopyButton()" ng-disabled="isCopyButtonSelected" style="width: 100%;">Copy</button>
+        </div>
+    </div>
+
+</ion-modal-view>
