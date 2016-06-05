@@ -1,0 +1,41 @@
+<ion-view view-title="My Works">
+  <ion-content lazy-scroll style="text-align: center">
+
+  <div ng-if="imageSrcs.length == 0" style="margin: auto">
+  	<i class="icon large "></i>
+  	<p>Yo do not have any work done yet!</p>
+  </div>
+
+  <div ng-if="imageSrcs.length > 0" class="row" ng-repeat="image in imageSrcs track by $index" ng-if="$index % 3 === 0" >
+	<div class="col col-33" ng-if="$index < imageSrcs.length" width="100%" on-tap="openPlayer($index)" on-hold="">
+		<div class="">
+			<div class="item item-image">
+				<img image-lazy-src="{{imageSrcs[$index]}}" width="100%" />
+				
+			</div>
+		</div>
+	</div>
+	<div class="col col-33" ng-if="$index + 1 < imageSrcs.length" on-tap="openPlayer($index)" on-hold="">
+		<div class="">
+			<div class="item item-image">
+				<img image-lazy-src="{{imageSrcs[$index+1]}}" width="100%" />
+				
+			</div>
+		</div>
+	</div>
+	<div class="col col-33" ng-if="$index + 2 < imageSrcs.length" on-tap="openPlayer($index)" on-hold="">
+		<div class="">
+			<div class="item item-image">
+				<img image-lazy-src="{{imageSrcs[$index+2]}}" width="100%" />
+			</div>
+		</div>
+	</div>
+  </div>
+
+<!--
+	<div ng-repeat="image in imageSrcs track by $index">
+		<img image-lazy-src="{{image}}" image-lazy-loader="lines"/>
+	</div>
+-->
+  </ion-content>
+</ion-view>

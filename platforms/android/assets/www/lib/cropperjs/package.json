@@ -1,0 +1,82 @@
+{
+  "name": "cropperjs",
+  "description": "JavaScript image cropper.",
+  "version": "0.7.0",
+  "main": "dist/cropper.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengyuanchen/cropperjs.git"
+  },
+  "homepage": "http://fengyuanchen.github.io/cropperjs",
+  "author": {
+    "name": "Fengyuan Chen",
+    "url": "http://chenfengyuan.com"
+  },
+  "keywords": [
+    "image",
+    "crop",
+    "cropping",
+    "move",
+    "zoom",
+    "rotate",
+    "scale",
+    "cropper",
+    "cropperjs",
+    "cropper.js",
+    "html",
+    "css",
+    "javascript",
+    "front-end",
+    "web",
+    "development"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.6",
+    "gulp-csslint": "^0.2.2",
+    "gulp-htmlcomb": "^0.1.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^1.12.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-qunit": "^1.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "gitHead": "4b5627407884a1e4324020a8f95ca80f47707c4d",
+  "bugs": {
+    "url": "https://github.com/fengyuanchen/cropperjs/issues"
+  },
+  "_id": "cropperjs@0.7.0",
+  "scripts": {},
+  "_shasum": "366ecc3083ad1a7bfbfe7bd068aa15ac0d97797f",
+  "_from": "cropperjs@*",
+  "_npmVersion": "3.5.2",
+  "_nodeVersion": "5.7.1",
+  "_npmUser": {
+    "name": "fengyuanchen",
+    "email": "chenfengyuan@outlook.com"
+  },
+  "dist": {
+    "shasum": "366ecc3083ad1a7bfbfe7bd068aa15ac0d97797f",
+    "tarball": "https://registry.npmjs.org/cropperjs/-/cropperjs-0.7.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "fengyuanchen",
+      "email": "cfy.org@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/cropperjs-0.7.0.tgz_1458456919345_0.0877344748005271"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cropperjs/-/cropperjs-0.7.0.tgz"
+}

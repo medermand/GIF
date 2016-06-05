@@ -65,7 +65,7 @@
               </div>
             </label>
           </div>
-
+<!--
           <div class="row padding">
             <i class="icon ion-information-circled" on-tap="infoPopover($event, 2)"></i>
              &nbsp;&nbsp;&nbsp;Another setting 
@@ -75,7 +75,7 @@
                 <div class="handle"></div>
               </div>
             </label>
-          </div>
+          </div>-->
           </ion-item>
         </div>
 
@@ -99,7 +99,7 @@
 
             <div class="card">
               <div class="item item-divider">
-                Term and Conditions:
+                Terms and Conditions:
               </div>
               <div class="item item-text-wrap">
                 There is no such a thing!
@@ -111,7 +111,7 @@
                 Privacy Policy:
               </div>
               <div class="item item-text-wrap">
-                As yourself may have noticed; Gifer has nothing to do with your personal stuff including the things in your gallery.
+                As yourself may have noticed; Gifer has nothing to do with your personal stuff including the things in your gallery, personal cloud space etc. Still if you are not satisfied you can allways send us an email through the application and express your concern.
               </div>
             </div>
           </ion-item>
@@ -125,9 +125,9 @@
           </ion-item>
 
           <ion-item class="item-accordion" ng-show="isGroupShown('feedback')">
-            <button class="button button-block button-calm">Rate Us on Store</button>
+            <button class="button button-block button-calm" ng-click="rateUsOnStore()">Rate Us on Store</button>
             <p>Or you could just simply send us an e-mail below there!</p>
-            <button class="button button-block button-calm">Do the e-mail Thing</button>
+            <button class="button button-block button-calm" ng-click="mailThing()">Do the e-mail Thing</button>
           </ion-item>
         </div>
 

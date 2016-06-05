@@ -28,7 +28,22 @@ angular.module('gifer', ['ionic', 'gifer.controllers', 'gifer.services', 'gifer.
     });
   })
 
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $cordovaAppRateProvider) {
+
+    document.addEventListener('deviceready' ,function() {
+
+    var prefs = {
+     language: 'en',
+     appName: 'GIFER',
+     openStoreInApp: false,
+     iosURL: '<my_app_id>',
+     androidURL: 'market://details?id=<package_name>',
+     windowsURL: 'ms-windows-store:Review?name=<...>'
+   };
+
+   $cordovaAppRateProvider.setPreferences(prefs);
+  }, false);
+
     $stateProvider
 
       .state('app', {
@@ -93,7 +108,7 @@ angular.module('gifer', ['ionic', 'gifer.controllers', 'gifer.services', 'gifer.
         views: {
           'menuContent': {
             templateUrl: 'templates/edit.html',
-            controller: 'PhotoCtrl'
+            controller: 'EditCtrl'
           }
         }
       })

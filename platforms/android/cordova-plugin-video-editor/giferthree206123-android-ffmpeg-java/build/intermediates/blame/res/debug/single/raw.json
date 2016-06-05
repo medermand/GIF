@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/talhaseker/IonicWorkspace/GIF/platforms/android/cordova-plugin-video-editor/giferthree206123-android-ffmpeg-java/build/intermediates/res/merged/debug/raw/ffmpeg",
+        "source": "/Users/talhaseker/IonicWorkspace/GIF/platforms/android/cordova-plugin-video-editor/giferthree206123-android-ffmpeg-java/res/raw/ffmpeg"
+    },
+    {
+        "merged": "/Users/talhaseker/IonicWorkspace/GIF/platforms/android/cordova-plugin-video-editor/giferthree206123-android-ffmpeg-java/build/intermediates/res/merged/debug/raw/sox",
+        "source": "/Users/talhaseker/IonicWorkspace/GIF/platforms/android/cordova-plugin-video-editor/giferthree206123-android-ffmpeg-java/res/raw/sox"
+    }
+]

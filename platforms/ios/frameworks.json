@@ -1,0 +1,17 @@
+{
+    "ImageIO.framework": 1,
+    "CoreLocation.framework": 1,
+    "AVFoundation.framework": 2,
+    "MediaPlayer.framework": 1,
+    "CoreVideo.framework": 1,
+    "Foundation.framework": 1,
+    "UIKit.framework": 1,
+    "Photos.framework": 1,
+    "CoreMedia.framework": 1,
+    "OpenGLES.framework": 1,
+    "QuartzCore.framework": 1,
+    "MessageUI.framework": 2,
+    "AudioToolbox.framework": 1,
+    "StoreKit.framework": 1,
+    "Social.framework": 1
+}

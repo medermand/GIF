@@ -27,9 +27,16 @@
     "cordova-plugin-console",
     "cordova-plugin-media-capture",
     "cordova-plugin-whitelist",
-    "ionic-plugin-keyboard"
+    "ionic-plugin-keyboard",
+    "cordova-plugin-email-composer",
+    "cordova-plugin-apprate",
+    {
+      "locator": "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
+      "id": "cordova-plugin-x-socialsharing"
+    }
   ],
   "cordovaPlatforms": [
-    "ios"
+    "ios",
+    "android"
   ]
 }

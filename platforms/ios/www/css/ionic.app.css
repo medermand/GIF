@@ -9924,6 +9924,21 @@ i.larger.ion-film-marker {
 i.larger.ion-camera {
   font-size: 100px; }
 
+i.large.ion-social-twitter {
+  font-size: 20px; }
+
+i.large.ion-social-facebook {
+  font-size: 20px; }
+
+i.large.ion-email {
+  font-size: 20px; }
+
+i.large.ion-share {
+  font-size: 20px; }
+
+i.large.ion-alert-circled {
+  font-size: 50px; }
+
 .div-calm {
   box-shadow: 2px 2px 1px grey;
   border-radius: 15px;

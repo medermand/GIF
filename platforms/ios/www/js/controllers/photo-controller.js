@@ -6,13 +6,13 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
   //$rootScope.images = [];
   // the reason why images variable is rootScope, is because in video editing, I am gonna set this,
   //and jump to this page. So, this is initialized in app-controller, because it is the first page that the user sees.
-
+  $scope.isCanceled = false;
   $scope.resizedImages = [];
   $scope.selectedImages = [];
   $scope.tempImages = [];
   // filter stuff to control filter statement and merge the filter images
-  $scope.filters = ['original', 'blur', 'brightness', 'contrast', 'grayscale', 'huerotate', 'invert', 'opacity', 'saturate', 'sepia', 'shadow'];
-  //$scope.filters = ['original', 'aden', 'earlybird', 'rise', 'reyes', 'inkwell', 'toaster', 'walden', 'hudson', 'gingham', 'mayfair', 'lofi', 'xpro2', '_1977', 'brooklyn', 'slumber', 'nashville', 'lark', 'moon', 'clarendon', 'willow'];
+  //$scope.filters = ['original', 'blur', 'brightness', 'contrast', 'grayscale', 'huerotate', 'invert', 'opacity', 'saturate', 'sepia', 'shadow'];
+  $scope.filters = ['original', 'aden', 'earlybird', 'rise', 'reyes', 'inkwell', 'toaster', 'walden', 'hudson', 'gingham', 'mayfair', 'lofi', 'xpro2', '_1977', 'brooklyn', 'slumber', 'nashville', 'lark', 'moon', 'clarendon', 'willow'];
   var isFiltered = false;
   var currentFilter = '';
   var filterIndex = 0;
@@ -36,10 +36,10 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
     gifWidth: 300,
     gifHeight: 300,
     interval: 0.1,
-    numFrames: 5,
+    numFrames: 10,
     text: '',
     fontWeight: 'normal',
-    fontSize: '16px',
+    fontSize: '14px',
     minFontSize: '10px',
     resizeFont: false,
     textXCoordinate: null,
@@ -58,7 +58,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
   };
 
   var disableCropButton = true;
-  var imageAllowence = 20;
+  var imageAllowence = 50;
   // image?
   var image;
   // super gif ebject that responsible for image player
@@ -85,6 +85,23 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
   // $scope.tempImages = $scope.editSheetImages;
 //**************************************** DELETE THIS *********************
 
+  var repositionNewCanvas = function () {
+    var top = $scope.imageTop + 'px';
+    var left = $scope.imageLeft + 'px';
+    var width = $scope.gifOptions.gifWidth + 'px';
+    var height = $scope.gifOptions.gifHeight + 'px';
+    sup1.get_canvas().id = 'preview';
+    sup1.get_canvas().style.position = 'absolute';
+    sup1.get_canvas().style.top = top;
+    sup1.get_canvas().style.left = left;
+    sup1.get_canvas().style.width = width;
+    sup1.get_canvas().style.height = height;
+    var elem = angular.element(document.querySelector('#preview'));
+    elem.attr('ng-src', $scope.resizedImages[0]);
+    elem.attr('rel:auto_play', 1);
+    elem.attr('rel:animated_src', $scope.gifSrc);
+    elem.addClass(currentFilter);
+  }
 
   $scope.calculateDimensions = function (gifWidth, gifHeight) {
     $scope.dev_width = $window.innerWidth;
@@ -97,26 +114,10 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
     if (sup1 == undefined) {
 
     } else {
-      repositionNewCanvas();
+      $scope.$apply(function(){
+        repositionNewCanvas();
+      });
     }
-  }
-
-  var repositionNewCanvas = function () {
-    var top = $scope.imageTop + 'px';
-    var left = $scope.imageLeft + 'px';
-    var width = $scope.gifOptions.gifWidth + 'px';
-    var height = $scope.gifOptions.gifHeight + 'px';
-    sup1.get_canvas().id = 'preview';
-    var elem = angular.element(document.querySelector('#preview'));
-    elem.attr('ng-src', $scope.resizedImages[0]);
-    elem.attr('rel:auto_play', 1);
-    elem.attr('rel:animated_src', $scope.gifSrc);
-    elem.addClass(currentFilter);
-    sup1.get_canvas().style.position = 'absolute';
-    sup1.get_canvas().style.top = top;
-    sup1.get_canvas().style.left = left;
-    sup1.get_canvas().style.width = width;
-    sup1.get_canvas().style.height = height;
   }
 
   $scope.calculateDimensions(350, 350);
@@ -198,13 +199,17 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
 
       $cordovaCapture.captureImage(options).then(function (imageData) {
         var length = imageData.length;
-        for (var i = 0; i < length; i++) {
-          var src = imageData[i].fullPath;
-          $rootScope.images.push(src);
-          $scope.tempImages.push(src);
+        if (length > 0) {
+          for (var i = 0; i < length; i++) {
+            var src = imageData[i].fullPath;
+            $rootScope.images.push(src);
+            $scope.tempImages.push(src);
+          }
+          //$ionicLoading.hide();
+          $scope.$broadcast('getImagesDoneEvent', 1);
+        }else{
+          $state.go('app.menu');
         }
-        //$ionicLoading.hide();
-        $scope.$broadcast('getImagesDoneEvent', 1);
 
       }, function (err) {
         $state.go('app.menu');
@@ -635,6 +640,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
             $scope.gifSrc = image;
             $scope.create = false;
             $ionicLoading.hide();
+            $scope.progress = 0;
           });
           //$scope.calculateDimensions($scope.gifOptions.gifWidth, $scope.gifOptions.gifHeight);
           sup1 = new SuperGif({gif: document.getElementById('preview')});

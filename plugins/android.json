@@ -1,0 +1,67 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-app-preferences": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-apprate": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-email-composer": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-image-picker": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-instagram-assets-picker": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-video-editor": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        }
+    }
+}

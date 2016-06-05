@@ -1,0 +1,9 @@
+<div class="wide">
+  <video autoplay controls>
+    <source ng-src="{{originalVideoPath}}" type="video/mp4"/>
+  </video>
+</div>
+<!--<slider floor="0" ceiling="100" step="1" ng-model="currentPercent" change="onSliderChange()"></slider>-->
+<slider floor="0" ceiling="{{ duration }}" step="0.1" precision="10" ng-model-low="start" ng-model-high="end"
+        change="onTrimChange(start, end)"></slider>
+

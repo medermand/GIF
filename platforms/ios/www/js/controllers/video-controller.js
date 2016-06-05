@@ -14,7 +14,7 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
         numFrames: 10,
         text: '',
         fontWeight: 'normal',
-        fontSize: '16px',
+        fontSize: '14px',
         minFontSize: '10px',
         resizeFont: false,
         textXCoordinate: null,
@@ -34,10 +34,12 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
 
 
     var videoRecord = function () {
-        var options = {limit: 1, duration: 15};
+        var options = {limit: 1, duration: 150};
         $ionicPlatform.ready(function () {
             $cordovaCapture.captureVideo(options).then(function (videoData) {
                 // Success! Video data is here
+                $rootScope.trimmedVideoPath = videoData.filePath;
+                $scope.trim();
             }, function (err) {
                 $state.go('app.menu');
                 // An error occurred. Show a message to the user
@@ -71,14 +73,14 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
 
     $scope.trim = function () {
 
-        var maxVideoSize = 10;
+        var maxVideoSize = 150;
 
         var trimmedVideoSize = finish - start;
 
         console.log('trimmed video size is');
         console.log(trimmedVideoSize);
         if (trimmedVideoSize > maxVideoSize) {
-            customPopup.showAlert('Error!', 'The video cannot be more than ' + maxVideoSize + 's');
+            customPopup.showAlert('Error!', 'A video cannot be more than ' + maxVideoSize + 's');
         } else if(trimmedVideoSize <= maxVideoSize){
             $ionicLoading.show({
                 template: 'Trimming the video...'
@@ -121,8 +123,8 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
         $ionicLoading.show({
             template: 'Converting to GIF...'
         })
-        $scope.gifOptions.videos = $rootScope.trimmedVideoPath;
-        gifshot.createGIF({'video': $rootScope.trimmedVideoPath}, function (obj) {
+        $scope.gifOptions.video[0] = $rootScope.trimmedVideoPath;
+        gifshot.createGIF($scope.gifOptions, function (obj) {
 
             if (!obj.error) {
                 console.log('video is converted to GIF');
@@ -137,7 +139,7 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
                 elem.attr('rel:auto_play', 1);
                 elem.attr('rel:animated_src', $scope.gifSrc);
                 var option = {
-                    gif: image,
+                    gif: elem,
                     vp_t: 0,
                     vp_l: 0,
                     vp_w: 0,
@@ -150,9 +152,9 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
 
                 sup1 = new SuperGif(option);
                 sup1.load(function () {
-                    console.log('*********gif is parsed***********************************');
                     frames = sup1.get_frames();
                     frameOffsets = sup1.get_frameOffsets();
+                    console.log('*********gif is parsed*********************************** and the length of frames is that : ****************************************' + frames.length);
                     for (var i = 0; i < frames.length; i++) {
                         var tmpCanvas = document.createElement('canvas');
                         var data = frames[i].data;

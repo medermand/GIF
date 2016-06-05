@@ -188,10 +188,28 @@
         },
         "cordova-plugin-instagram-assets-picker": {
             "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-email-composer": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-apprate": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.ionicframework.giferthree206123"
         }
     }
