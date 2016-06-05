@@ -4,7 +4,9 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
 
     var start;
     var finish;
+    var outputFilePath = "trimmedVideo-" + makeID.getNewID;
     var sup1;
+    $rootScope.images = [];
     $scope.gifOptions = {
         gifWidth: 200,
         gifHeight: 200,
@@ -47,101 +49,71 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
         videoRecord();
     }
 
-    var videoTrancode = function (filePath, success_callback) {
-        var VideoEditorOptions = {
-            OptimizeForNetworkUse: {
-                NO: 0,
-                YES: 1
-            },
-            OutputFileType: {
-                M4V: 0,
-                MPEG4: 1,
-                M4A: 2,
-                QUICK_TIME: 3
-            }
-        };
+    //makeID service is only working for once, no idea why. So for using multiple times,
+    // I had to write a local method.
+    var makeID = function () {
+        var text = '';
+        var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-        $ionicLoading.show({
-            template: 'Transcoding the video...'
-        });
-
-        VideoEditor.transcodeVideo(
-            videoTranscodeSuccess, // success cb
-            videoTranscodeError, // error cb
-            {
-                fileUri: filePath, // the path to the video on the device
-                outputFileName: 'videoTranscoded-' + makeID.getNewID, // the file name for the transcoded video
-                outputFileType: VideoEditorOptions.OutputFileType.MPEG4,
-                optimizeForNetworkUse: VideoEditorOptions.OptimizeForNetworkUse.YES,
-                saveToLibrary: false, // optional, defaults to true
-                deleteInputFile: false, // optional (android only), defaults to false
-                maintainAspectRatio: true, // optional, defaults to true
-                width: 300, // optional, see note below on width and height
-                height: 300,
-                videoBitrate: 400000, // optional, bitrate in bits, defaults to 1 megabit (1000000)
-                fps: 20, // optional (android only), defaults to 24
-                audioChannels: 2, // optional, number of audio channels, defaults to 2
-                audioSampleRate: 44100, // optional, sample rate for the audio, defaults to 44100
-                audioBitrate: 128000, // optional, audio bitrate for the video in bits, defaults to 128 kilobits (128000)
-                progress: function (info) {
-                } // optional, see docs on progress
-            }
-        );
-
-
-        function videoTranscodeSuccess(result) {
-            // result is the path to the transcoded video on the device
-            $ionicLoading.hide();
-            success_callback(result);
-            console.log('videoTranscodeSuccess, result: ' + result);
+        for (var i = 0; i < 5; i++) {
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
         }
+        return text;
 
-        function videoTranscodeError(err) {
-            $ionicLoading.hide();
-            customPopup.showAlert('Error!', 'Cannot convert video into suitable format');
-            console.log('videoTranscodeError, err: ' + err);
-        }
     }
 
     $scope.onTrimChange = function (strt, end) {
+
         start = strt;
         finish = end;
     };
 
 
     $scope.trim = function () {
-        $ionicLoading.show({
-            template: 'Trimming the video...'
-        });
 
-        VideoEditor.trim(
-            trimSuccess,
-            trimFail,
-            {
-                fileUri: $rootScope.originalVideoPath, // path to input video
-                trimStart: start, // time to start trimming in seconds
-                trimEnd: finish, // time to end trimming in seconds
-                outputFileName: "trimmedVideo-" + makeID.getNewID, // output file name
-                progress: function (info) {
-                } // optional, see docs on progress
+        var maxVideoSize = 10;
+
+        var trimmedVideoSize = finish - start;
+
+        console.log('trimmed video size is');
+        console.log(trimmedVideoSize);
+        if (trimmedVideoSize > maxVideoSize) {
+            customPopup.showAlert('Error!', 'A video cannot be more than ' + maxVideoSize + 's');
+        } else if(trimmedVideoSize <= maxVideoSize){
+            $ionicLoading.show({
+                template: 'Trimming the video...'
+            });
+
+            VideoEditor.trim(
+                trimSuccess,
+                trimFail,
+                {
+                    fileUri: $rootScope.originalVideoPath, // path to input video
+                    trimStart: start, // time to start trimming in seconds
+                    trimEnd: finish, // time to end trimming in seconds
+                    outputFileName: "trimmedVideo-" + makeID(), // output file name
+                    progress: function (info) {
+                    } // optional, see docs on progress
+                }
+            );
+
+            function trimSuccess(result) {
+                $ionicLoading.hide();
+                // result is the path to the trimmed video on the device
+                $rootScope.trimmedVideoPath = result;
+                console.log('trimSuccess,: ' + result);
+                //$scope.$apply(function () {
+                //  $rootScope.videoPath = result;
+                //})
+                createGIF();
             }
-        );
 
-        function trimSuccess(result) {
-            $ionicLoading.hide();
-            // result is the path to the trimmed video on the device
-            $rootScope.trimmedVideoPath = result;
-            console.log('trimSuccess,: ' + result);
-            //$scope.$apply(function () {
-            //  $rootScope.videoPath = result;
-            //})
-            createGIF();
+            function trimFail(err) {
+                $ionicLoading.hide();
+                console.log('trimFail, err: ' + err);
+            }
         }
 
-        function trimFail(err) {
-            $ionicLoading.hide();
-            console.log('trimFail, err: ' + err);
-        }
     }
 
     var createGIF = function () {

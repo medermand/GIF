@@ -5,6 +5,7 @@
 services.factory('makeID', function () {
 
   var getNewID = function () {
+    console.log('they are calling me');
     var text = '';
     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
