@@ -4,6 +4,7 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
 
     var start;
     var finish;
+    var isTrimChanged = false;
     var outputFilePath = "trimmedVideo-" + makeID.getNewID;
     var sup1;
     $rootScope.images = [];
@@ -65,7 +66,7 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
     }
 
     $scope.onTrimChange = function (strt, end) {
-
+        isTrimChanged = true;
         start = strt;
         finish = end;
     };
@@ -74,8 +75,12 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
     $scope.trim = function () {
 
         var maxVideoSize = 150;
-
-        var trimmedVideoSize = finish - start;
+        var trimmedVideoSize = 0;
+        if (!isTrimChanged) {
+            trimmedVideoSize = $scope.duration;
+        }else{
+            trimmedVideoSize = finish - start;
+        }
 
         console.log('trimmed video size is');
         console.log(trimmedVideoSize);

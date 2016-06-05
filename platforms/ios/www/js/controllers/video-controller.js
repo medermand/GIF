@@ -74,8 +74,12 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
     $scope.trim = function () {
 
         var maxVideoSize = 150;
-
-        var trimmedVideoSize = finish - start;
+        var trimmedVideoSize = 0;
+        if (finish == null || start == null || finish == undefined || start == undefined) {
+            trimmedVideoSize = $scope.start - $scope.end;
+        }else{
+            trimmedVideoSize = finish - start;
+        }
 
         console.log('trimmed video size is');
         console.log(trimmedVideoSize);
@@ -139,7 +143,7 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
                 elem.attr('rel:auto_play', 1);
                 elem.attr('rel:animated_src', $scope.gifSrc);
                 var option = {
-                    gif: elem,
+                    gif: image,
                     vp_t: 0,
                     vp_l: 0,
                     vp_w: 0,
