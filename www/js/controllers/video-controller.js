@@ -1,16 +1,17 @@
 //angular.module('gifer.video-controller', [])
 
 controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, $scope, $ionicLoading, $cordovaCapture, $ionicPlatform, makeID, customPopup) {
-
+console.log("trim state has entered so that video controller has worked!");
     var start;
     var finish;
     var isTrimChanged = false;
     var outputFilePath = "trimmedVideo-" + makeID.getNewID;
     var sup1;
     $rootScope.images = [];
+    //$rootScope.trimmedVideoPath = '';
     $scope.gifOptions = {
-        gifWidth: 200,
-        gifHeight: 200,
+        gifWidth: 300,
+        gifHeight: 300,
         interval: 0.1,
         numFrames: 10,
         text: '',

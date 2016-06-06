@@ -2,12 +2,8 @@
 
 controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordovaPreferences, $ionicPlatform, $ionicLoading, makeID, customPopup) {
 
-
-
-
     //initialize it
     $scope.transcodeProgress = 0;
-
 
     $scope.photo = function (id) {
         console.log("photo id is equal to: " + id);
@@ -33,7 +29,7 @@ controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordova
                     function (result) { // success cb
                         console.log('getMedia success, result: ', JSON.stringify(result, null, 2));
 
-                        //with trancoding..
+                        //with transcoding..
                         //videoTrancode(result.filePath, function (transcodedVideoPath) {
                         //    $rootScope.originalVideoPath = transcodedVideoPath;
                         //    $state.go('app.trim', {id: id});
@@ -42,7 +38,9 @@ controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordova
 
                         //without trancoding
                         $rootScope.originalVideoPath = result.filePath;
+                        console.log("possible error area !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                         $state.go('app.trim', {id: id});
+                        console.log("possible error area 2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     },
                     function (err) { // error cb
                         console.log('getMedia error, err: ', err);
@@ -53,7 +51,7 @@ controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordova
                         showGrid: true // determines whether to show the grid for cropping - defaults to false
                     }
                 );
-            })
+            });
         }
         else {
             $state.go('app.trim', {id: id});

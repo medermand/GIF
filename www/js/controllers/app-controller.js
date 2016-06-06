@@ -38,7 +38,9 @@ controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordova
 
                         //without trancoding
                         $rootScope.originalVideoPath = result.filePath;
+                        console.log("possible error area !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                         $state.go('app.trim', {id: id});
+                        console.log("possible error area 2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     },
                     function (err) { // error cb
                         console.log('getMedia error, err: ', err);
@@ -49,7 +51,7 @@ controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordova
                         showGrid: true // determines whether to show the grid for cropping - defaults to false
                     }
                 );
-            })
+            });
         }
         else {
             $state.go('app.trim', {id: id});
