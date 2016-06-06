@@ -105,7 +105,7 @@ console.log("trim state has entered so that video controller has worked!");
                 }
             );
 
-            var function trimSuccess(result) {
+            function trimSuccess(result) {
                 $ionicLoading.hide();
                 // result is the path to the trimmed video on the device
                 $rootScope.trimmedVideoPath = result;
