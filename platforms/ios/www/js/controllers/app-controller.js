@@ -36,9 +36,16 @@ controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordova
                         })
 
                         //without trancoding
+<<<<<<< HEAD
                         //$rootScope.originalVideoPath = result.filePath;
                         //$state.go('app.trim', {id: id});
 
+=======
+                        $rootScope.originalVideoPath = result.filePath;
+                        console.log("possible error area !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                        $state.go('app.trim', {id: id});
+                        console.log("possible error area 2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+>>>>>>> origin/master
                     },
                     function (err) { // error cb
                         console.log('getMedia error, err: ', err);

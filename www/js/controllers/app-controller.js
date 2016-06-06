@@ -39,6 +39,7 @@ controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordova
                         //$rootScope.originalVideoPath = result.filePath;
                         //$state.go('app.trim', {id: id});
 
+
                     },
                     function (err) { // error cb
                         console.log('getMedia error, err: ', err);

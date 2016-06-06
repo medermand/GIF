@@ -66,6 +66,7 @@ console.log("trim state has entered so that video controller has worked!");
 
     }
 
+<<<<<<< HEAD
     //$scope.onTrimChange = function (strt, end) {
     //    isTrimChanged = true;
     //    start = strt;
@@ -75,6 +76,10 @@ console.log("trim state has entered so that video controller has worked!");
 
     $scope.trim = function (strt, end) {
 
+=======
+    $scope.onTrimChange = function (strt, end) {
+        isTrimChanged = true;
+>>>>>>> origin/master
         start = strt;
         finish = end;
 
@@ -87,6 +92,16 @@ console.log("trim state has entered so that video controller has worked!");
         //    trimmedVideoSize = finish - start;
         //}
 
+<<<<<<< HEAD
+=======
+        var maxVideoSize = 150;
+        var trimmedVideoSize = 0;
+        if (!isTrimChanged) {
+            trimmedVideoSize = $scope.duration;
+        }else{
+            trimmedVideoSize = finish - start;
+        }
+>>>>>>> origin/master
 
         console.log('trimmed video size is');
         console.log(trimmedVideoSize);
