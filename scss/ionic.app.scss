@@ -225,19 +225,19 @@ i.larger.ion-camera {
   font-size: 100px;
 }
 i.large.ion-social-twitter {
-  font-size: 20px;
+  font-size: 30px;
 }
 i.large.ion-social-facebook {
-  font-size: 20px;
+  font-size: 30px;
 }
 i.large.ion-email {
-  font-size: 20px;
+  font-size: 30px;
 }
 i.large.ion-share {
-  font-size: 20px;
+  font-size: 30px;
 }
 i.large.ion-alert-circled{
-  font-size: 50px;
+  font-size: 100px;
 }
 .div-calm {
   box-shadow: 2px 2px 1px grey;
@@ -281,15 +281,3 @@ progress[value] {
     margin: 0 0 1.5em;
 }
 
-
-
-.blur {-webkit-filter: blur(4px);filter: blur(4px);}
-.brightness {-webkit-filter: brightness(0.30);filter: brightness(0.30);}
-.contrast {-webkit-filter: contrast(180%);filter: contrast(180%);}
-.grayscale {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
-.huerotate {-webkit-filter: hue-rotate(180deg);filter: hue-rotate(180deg);}
-.invert {-webkit-filter: invert(100%);filter: invert(100%);}
-.opacity {-webkit-filter: opacity(50%);filter: opacity(50%);}
-.saturate {-webkit-filter: saturate(7); filter: saturate(7);}
-.sepia {-webkit-filter: sepia(100%);filter: sepia(100%);}
-.shadow {-webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green);}

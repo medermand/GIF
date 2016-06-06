@@ -70,9 +70,9 @@
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSMainNibFile</key>
-    <string/>
+    <string></string>
     <key>NSMainNibFile~ipad</key>
-    <string/>
+    <string></string>
     <key>UIRequiresFullScreen</key>
     <true/>
     <key>UILaunchImages</key>
@@ -179,7 +179,7 @@
       </dict>
     </array>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string/>
+    <string></string>
     <key>LSApplicationQueriesSchemes</key>
     <array>
       <string>mailto</string>

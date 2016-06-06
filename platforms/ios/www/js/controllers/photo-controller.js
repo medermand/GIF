@@ -3,10 +3,10 @@
 controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $stateParams, $window, $timeout, $cordovaImagePicker, $cordovaCapture, $cordovaFile, $ionicPlatform, $ionicModal, $ionicPopover, $ionicPopup, $ionicLoading, $ionicScrollDelegate, makeID, customPopup) {
 
   //**************************** variable declarations for scope *********************
-  //$rootScope.images = [];
+  $rootScope.images = [];
   // the reason why images variable is rootScope, is because in video editing, I am gonna set this,
   //and jump to this page. So, this is initialized in app-controller, because it is the first page that the user sees.
-  $scope.isCanceled = false;
+  
   $scope.resizedImages = [];
   $scope.selectedImages = [];
   $scope.tempImages = [];
@@ -162,15 +162,18 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
 
       $cordovaImagePicker.getPictures(options).then(function (results) {
         // Loop through acquired images
-
-
         //although user clicks cancel button, it fires success function, so for that reason, this if condition is used
+        console.log("results length is that!**************************************************************");
+        console.log(results.length);
         if(results.length > 0){
           for (var i = 0; i < results.length; i++) {
             var src = results[i];
+            console.log("results " + i + " supposed to be this: " + src);
             $rootScope.images.push(src);
+            console.log("rootScope has no error.................................................");
             $scope.tempImages.push(src);
           }
+          console.log("scope.brodcast get images done eevent supposed to fired");
           $scope.$broadcast('getImagesDoneEvent', 1);
         }else{
           $state.go('app.menu');
@@ -776,7 +779,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
           },
           image: myImage,
           assets: {
-            baseUrl: '/assets' // <-- This should be the absolute path to your `assets` directory
+            baseUrl: 'assets/' // <-- This should be the absolute path to your `assets` directory
           }
         });
 

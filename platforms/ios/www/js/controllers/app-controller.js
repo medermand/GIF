@@ -30,15 +30,15 @@ controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordova
                         console.log('getMedia success, result: ', JSON.stringify(result, null, 2));
 
                         //with transcoding..
-                        //videoTrancode(result.filePath, function (transcodedVideoPath) {
-                        //    $rootScope.originalVideoPath = transcodedVideoPath;
-                        //    $state.go('app.trim', {id: id});
-                        //
-                        //})
+                        videoTrancode(result.filePath, function (transcodedVideoPath) {
+                            $rootScope.originalVideoPath = transcodedVideoPath;
+                            $state.go('app.trim', {id: id});
+                        })
 
                         //without trancoding
-                        $rootScope.originalVideoPath = result.filePath;
-                        $state.go('app.trim', {id: id});
+                        //$rootScope.originalVideoPath = result.filePath;
+                        //$state.go('app.trim', {id: id});
+
                     },
                     function (err) { // error cb
                         console.log('getMedia error, err: ', err);
@@ -49,7 +49,7 @@ controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordova
                         showGrid: true // determines whether to show the grid for cropping - defaults to false
                     }
                 );
-            })
+            });
         }
         else {
             $state.go('app.trim', {id: id});
@@ -89,7 +89,7 @@ controllers.controller('AppCtrl', function ($scope, $rootScope, $state, $cordova
                 width: 300, // optional, see note below on width and height
                 height: 300,
                 videoBitrate: 400000, // optional, bitrate in bits, defaults to 1 megabit (1000000)
-                fps: 20, // optional (android only), defaults to 24
+                fps: 50, // optional (android only), defaults to 24
                 audioChannels: 2, // optional, number of audio channels, defaults to 2
                 audioSampleRate: 44100, // optional, sample rate for the audio, defaults to 44100
                 audioBitrate: 128000, // optional, audio bitrate for the video in bits, defaults to 128 kilobits (128000)

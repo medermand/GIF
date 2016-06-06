@@ -1,20 +1,22 @@
 //angular.module('gifer.video-controller', [])
 
 controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, $scope, $ionicLoading, $cordovaCapture, $ionicPlatform, makeID, customPopup) {
-
+console.log("trim state has entered so that video controller has worked!");
     var start;
     var finish;
+    var isTrimChanged = false;
     var outputFilePath = "trimmedVideo-" + makeID.getNewID;
     var sup1;
     $rootScope.images = [];
+    //$rootScope.trimmedVideoPath = '';
     $scope.gifOptions = {
-        gifWidth: 200,
-        gifHeight: 200,
+        gifWidth: 300,
+        gifHeight: 300,
         interval: 0.1,
         numFrames: 10,
         text: '',
         fontWeight: 'normal',
-        fontSize: '16px',
+        fontSize: '14px',
         minFontSize: '10px',
         resizeFont: false,
         textXCoordinate: null,
@@ -34,10 +36,12 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
 
 
     var videoRecord = function () {
-        var options = {limit: 1, duration: 15};
+        var options = {limit: 1, duration: 150};
         $ionicPlatform.ready(function () {
             $cordovaCapture.captureVideo(options).then(function (videoData) {
                 // Success! Video data is here
+                $rootScope.trimmedVideoPath = videoData.filePath;
+                $scope.trim();
             }, function (err) {
                 $state.go('app.menu');
                 // An error occurred. Show a message to the user
@@ -63,7 +67,7 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
     }
 
     $scope.onTrimChange = function (strt, end) {
-
+        isTrimChanged = true;
         start = strt;
         finish = end;
     };
@@ -71,9 +75,13 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
 
     $scope.trim = function () {
 
-        var maxVideoSize = 10;
-
-        var trimmedVideoSize = finish - start;
+        var maxVideoSize = 150;
+        var trimmedVideoSize = 0;
+        if (!isTrimChanged) {
+            trimmedVideoSize = $scope.duration;
+        }else{
+            trimmedVideoSize = finish - start;
+        }
 
         console.log('trimmed video size is');
         console.log(trimmedVideoSize);
@@ -97,7 +105,7 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
                 }
             );
 
-            function trimSuccess(result) {
+            var function trimSuccess(result) {
                 $ionicLoading.hide();
                 // result is the path to the trimmed video on the device
                 $rootScope.trimmedVideoPath = result;
@@ -121,8 +129,8 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
         $ionicLoading.show({
             template: 'Converting to GIF...'
         })
-        $scope.gifOptions.videos = $rootScope.trimmedVideoPath;
-        gifshot.createGIF({'video': $rootScope.trimmedVideoPath}, function (obj) {
+        $scope.gifOptions.video[0] = $rootScope.trimmedVideoPath;
+        gifshot.createGIF($scope.gifOptions, function (obj) {
 
             if (!obj.error) {
                 console.log('video is converted to GIF');
@@ -150,9 +158,9 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
 
                 sup1 = new SuperGif(option);
                 sup1.load(function () {
-                    console.log('*********gif is parsed***********************************');
                     frames = sup1.get_frames();
                     frameOffsets = sup1.get_frameOffsets();
+                    console.log('*********gif is parsed*********************************** and the length of frames is that : ****************************************' + frames.length);
                     for (var i = 0; i < frames.length; i++) {
                         var tmpCanvas = document.createElement('canvas');
                         var data = frames[i].data;

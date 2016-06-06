@@ -1,16 +1,17 @@
 //angular.module('gifer.video-controller', [])
 
 controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, $scope, $ionicLoading, $cordovaCapture, $ionicPlatform, makeID, customPopup) {
-
+console.log("trim state has entered so that video controller has worked!");
     var start;
     var finish;
     var isTrimChanged = false;
     var outputFilePath = "trimmedVideo-" + makeID.getNewID;
     var sup1;
     $rootScope.images = [];
+    //$rootScope.trimmedVideoPath = '';
     $scope.gifOptions = {
-        gifWidth: 200,
-        gifHeight: 200,
+        gifWidth: 300,
+        gifHeight: 300,
         interval: 0.1,
         numFrames: 10,
         text: '',
@@ -65,25 +66,31 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
 
     }
 
-    $scope.onTrimChange = function (strt, end) {
-        isTrimChanged = true;
+    //$scope.onTrimChange = function (strt, end) {
+    //    isTrimChanged = true;
+    //    start = strt;
+    //    finish = end;
+    //};
+
+
+    $scope.trim = function (strt, end) {
+
         start = strt;
         finish = end;
-    };
 
+        var maxVideoSize = 20;
+        var trimmedVideoSize = finish - start;
 
-    $scope.trim = function () {
+        //if (!isTrimChanged) {
+        //    trimmedVideoSize = $scope.duration;
+        //}else{
+        //    trimmedVideoSize = finish - start;
+        //}
 
-        var maxVideoSize = 150;
-        var trimmedVideoSize = 0;
-        if (!isTrimChanged) {
-            trimmedVideoSize = $scope.duration;
-        }else{
-            trimmedVideoSize = finish - start;
-        }
 
         console.log('trimmed video size is');
         console.log(trimmedVideoSize);
+
         if (trimmedVideoSize > maxVideoSize) {
             customPopup.showAlert('Error!', 'A video cannot be more than ' + maxVideoSize + 's');
         } else if(trimmedVideoSize <= maxVideoSize){
@@ -128,8 +135,8 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
         $ionicLoading.show({
             template: 'Converting to GIF...'
         })
-        $scope.gifOptions.video[0] = $rootScope.trimmedVideoPath;
-        gifshot.createGIF($scope.gifOptions, function (obj) {
+        //$scope.gifOptions.video[0] = $rootScope.trimmedVideoPath;
+        gifshot.createGIF({'video': $rootScope.trimmedVideoPath} , function (obj) {
 
             if (!obj.error) {
                 console.log('video is converted to GIF');
@@ -143,6 +150,8 @@ controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, 
                 elem.attr('ng-src', 'img/ionic.png');
                 elem.attr('rel:auto_play', 1);
                 elem.attr('rel:animated_src', $scope.gifSrc);
+                //elem.attr('rel:animated_src', 'img/cat.gif'); // try out this one.
+
                 var option = {
                     gif: image,
                     vp_t: 0,

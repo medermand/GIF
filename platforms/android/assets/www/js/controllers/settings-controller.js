@@ -100,6 +100,45 @@ controllers.controller('SettingsCtrl', function($rootScope,$scope, $ionicPlatfor
     $scope.popover.remove();
   });
 
+  
+  $scope.rateUsOnStore = function(){
+    $ionicPlatform.ready (function () {
+      $cordovaAppRate.navigateToAppStore().then(function (result) {
+        // success
+      });
+    });
+  }
+
+  $scope.mailThing = function(){
+    $cordovaEmailComposer.isAvailable().then(function() {
+      var email = {
+        to: 'gifer@gmail.com',
+        cc: '',
+        bcc: [],
+        attachments: [],
+        subject: 'About Gifer',
+        body: 'I want you to know...',
+        isHtml: false
+      };
+
+      $cordovaEmailComposer.open(email).then(null, function () {
+        // user cancelled email
+      });
+    }, function () {
+      var resizePopup = $ionicPopup.show({
+        template: 'Opps! E-mail service is not available right now, please try some other time.',
+        title: 'Error!',
+        scope: $scope,
+        buttons: [{
+          text: 'OK!',
+          type: 'button-calm',
+          onTap: function (e) {
+          }
+        }]
+      });
+    });
+  }
+
 })
 
 ;
