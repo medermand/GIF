@@ -397,6 +397,14 @@ module.exports = [
         "clobbers": [
             "window.plugins.socialsharing"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-admobpro/www/AdMob.js",
+        "id": "cordova-plugin-admobpro.AdMob",
+        "pluginId": "cordova-plugin-admobpro",
+        "clobbers": [
+            "window.AdMob"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -419,7 +427,9 @@ module.exports.metadata =
     "cordova-plugin-globalization": "1.0.3",
     "cordova-plugin-inappbrowser": "1.4.0",
     "cordova-plugin-apprate": "1.1.7",
-    "cordova-plugin-x-socialsharing": "5.1.1"
+    "cordova-plugin-x-socialsharing": "5.1.1",
+    "cordova-plugin-extension": "1.5.1",
+    "cordova-plugin-admobpro": "2.18.0"
 }
 // BOTTOM OF METADATA
 });

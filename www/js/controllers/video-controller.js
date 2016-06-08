@@ -1,6 +1,6 @@
 //angular.module('gifer.video-controller', [])
 
-controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, $scope, $ionicLoading, $cordovaCapture, $ionicPlatform, makeID, customPopup) {
+controllers.controller('VideoCtrl', function ($rootScope, $state, $stateParams, $scope, $ionicLoading, $cordovaCapture, $ionicPlatform, makeID, customPopup, $cordovaGoogleAds, $window) {
 console.log("trim state has entered so that video controller has worked!");
     var start;
     var finish;

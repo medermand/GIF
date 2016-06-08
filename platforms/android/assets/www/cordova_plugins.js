@@ -340,6 +340,13 @@ module.exports = [
         "clobbers": [
             "window.plugins.socialsharing"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-admobpro/www/AdMob.js",
+        "id": "cordova-plugin-admobpro.AdMob",
+        "clobbers": [
+            "window.AdMob"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -362,7 +369,9 @@ module.exports.metadata =
     "cordova-plugin-video-editor": "1.0.9",
     "cordova-plugin-whitelist": "1.2.2",
     "ionic-plugin-keyboard": "2.2.0",
-    "cordova-plugin-x-socialsharing": "5.1.1"
+    "cordova-plugin-x-socialsharing": "5.1.1",
+    "cordova-plugin-extension": "1.5.1",
+    "cordova-plugin-admobpro": "2.18.0"
 };
 // BOTTOM OF METADATA
 });

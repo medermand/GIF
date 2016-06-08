@@ -45,6 +45,9 @@
         },
         "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-admobpro": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
         }
     },
     "dependent_plugins": {
@@ -61,6 +64,9 @@
             "PACKAGE_NAME": "com.ionicframework.giferthree206123"
         },
         "cordova-plugin-video-editor": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        },
+        "cordova-plugin-extension": {
             "PACKAGE_NAME": "com.ionicframework.giferthree206123"
         }
     }

@@ -1,5 +1,5 @@
 
-controllers.controller('BrowseCtrl', function($scope, $ionicPlatform, $cordovaFile, $timeout, $ionicModal, $ionicPopup, $cordovaSocialSharing) {
+controllers.controller('BrowseCtrl', function($scope, $rootScope, $ionicPlatform, $cordovaFile, $timeout, $ionicModal, $ionicPopup, $cordovaSocialSharing, $cordovaGoogleAds, $window) {
 
    $scope.imageSrcs = [];
    $scope.play = false;
@@ -29,6 +29,18 @@ controllers.controller('BrowseCtrl', function($scope, $ionicPlatform, $cordovaFi
 
     $scope.myWork = function(){
       $ionicPlatform.ready(function(){
+
+        try {
+            console.log('Show Banner Ad');       
+            $cordovaGoogleAds.createBanner({
+                adId: $rootScope.adMobId.admob_banner_key,
+                position: $rootScope.adMobPosition.BOTTOM_CENTER,
+                isTesting: true,
+                autoShow: true
+            });
+        } catch (e) {
+            alert(e);
+        }
 
         var images = getImages();
         

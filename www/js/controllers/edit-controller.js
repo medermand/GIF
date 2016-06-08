@@ -1,6 +1,6 @@
 //angular.module('gifer.edit-controller', [])
 
-controllers.controller('EditCtrl', function($scope, $ionicPlatform, $cordovaFile, $cordovaDevice, $timeout, $ionicModal, $ionicPopup, $cordovaSocialSharing) {
+controllers.controller('EditCtrl', function($scope, $rootScope, $ionicPlatform, $cordovaFile, $cordovaDevice, $timeout, $ionicModal, $ionicPopup, $cordovaSocialSharing, $cordovaGoogleAds, $window) {
 	console.log("edit gif controller has entered");
 	var files =  [];
 	$scope.images = [];
@@ -64,6 +64,19 @@ controllers.controller('EditCtrl', function($scope, $ionicPlatform, $cordovaFile
 
 $ionicPlatform.ready(function() {
 	console.log("platform ready function has entered")
+
+  try {
+      console.log('Show Banner Ad');       
+      $cordovaGoogleAds.createBanner({
+          adId: $rootScope.adMobId.admob_banner_key,
+          position: $rootScope.adMobPosition.BOTTOM_CENTER,
+          isTesting: true,
+          autoShow: true
+      });
+  } catch (e) {
+      alert(e);
+  }
+
 	var platform = $cordovaDevice.getPlatform();
 
 	if (platform == 'iOS') {

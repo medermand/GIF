@@ -1,6 +1,6 @@
 //angular.module('gifer.photo-controller', [])
 
-controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $stateParams, $window, $timeout, $cordovaImagePicker, $cordovaCapture, $cordovaFile, $ionicPlatform, $ionicModal, $ionicPopover, $ionicPopup, $ionicLoading, $ionicScrollDelegate, makeID, customPopup) {
+controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $stateParams, $window, $timeout, $cordovaImagePicker, $cordovaCapture, $cordovaFile, $ionicPlatform, $ionicModal, $ionicPopover, $ionicPopup, $ionicLoading, $ionicScrollDelegate, makeID, customPopup, $cordovaGoogleAds, $window) {
 
   //**************************** variable declarations for scope *********************
   $rootScope.images = [];
