@@ -49,12 +49,6 @@
     <feature name="VideoEditor">
         <param name="android-package" value="org.apache.cordova.videoeditor.VideoEditor" />
     </feature>
-    <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
-    <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
-    <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
-    <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
-    <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
-    <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
     <splash density="land-ldpi" src="resources/android/splash/drawable-land-ldpi-screen.png" />
     <splash density="land-mdpi" src="resources/android/splash/drawable-land-mdpi-screen.png" />
     <splash density="land-hdpi" src="resources/android/splash/drawable-land-hdpi-screen.png" />
@@ -67,12 +61,19 @@
     <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
     <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
     <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
-    <name>giferThree</name>
+    <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
+    <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
+    <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
+    <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
+    <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
+    <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
+    <name>MetaGIF</name>
     <description>
-        An Ionic Framework and Cordova project.
+        MetaGIF is a cross platform application that provides users a set of great tools to create, play, edit and share gif files.
     </description>
     <author email="you@example.com" href="http://example.com.com/">
-      Your Name Here
+      Talha Şeker
+      Meder Kutbidin Uulu
     </author>
     <content original-src="index.html" src="http://192.168.1.2:8100" />
     <access origin="*" />
@@ -84,4 +85,5 @@
     <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashScreen" value="screen" />
+    <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
 </widget>

@@ -34,7 +34,7 @@ angular.module('gifer', ['ionic', 'gifer.controllers', 'gifer.services', 'gifer.
 
     var prefs = {
      language: 'en',
-     appName: 'GIFER',
+     appName: 'MetaGIF',
      openStoreInApp: false,
      iosURL: '<my_app_id>',
      androidURL: 'market://details?id=<package_name>',

@@ -14,6 +14,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
   //$scope.filters = ['original', 'blur', 'brightness', 'contrast', 'grayscale', 'huerotate', 'invert', 'opacity', 'saturate', 'sepia', 'shadow'];
   $scope.filters = ['original', 'aden', 'earlybird', 'rise', 'reyes', 'inkwell', 'toaster', 'walden', 'hudson', 'gingham', 'mayfair', 'lofi', 'xpro2', '_1977', 'brooklyn', 'slumber', 'nashville', 'lark', 'moon', 'clarendon', 'willow'];
   var isFiltered = false;
+  var callSave = false;
   var currentFilter = '';
   var filterIndex = 0;
   // tab control variables are here!
@@ -29,7 +30,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
 
   $scope.create = true;
   $scope.showBottomBar = true;
-  $scope.play = true;
+  $scope.play = false;
   $scope.isCopyButtonSelected = false;
 
   $scope.gifOptions = {
@@ -73,7 +74,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
   var cropIndex = 0;
   // those variables are for resizing process
   var resizeIndex = 0;
-  var length = $scope.tempImages.length;
+  var length = 0;
   // local storage guys are here!
   var IMAGE_STORAGE_KEY = 'images';
   var localImageNames = [];
@@ -98,7 +99,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
     sup1.get_canvas().style.height = height;
     var elem = angular.element(document.querySelector('#preview'));
     elem.attr('ng-src', $scope.resizedImages[0]);
-    elem.attr('rel:auto_play', 1);
+    elem.attr('rel:auto_play', 0);
     elem.attr('rel:animated_src', $scope.gifSrc);
     elem.addClass(currentFilter);
   }
@@ -109,19 +110,19 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
     //before calculate check dimensions for accuracy...
     var left = ($scope.dev_width - gifWidth) / 2;
     var top = ($scope.dev_height - gifHeight) / 2;
-    $scope.imageLeft = left;
-    $scope.imageTop = top;
     if (sup1 == undefined) {
 
     } else {
       $scope.$apply(function(){
+        $scope.imageLeft = left;
+        $scope.imageTop = top;
         repositionNewCanvas();
       });
     }
   }
 
-  $scope.calculateDimensions(350, 350);
-  $scope.gifSrc = 'http://placehold.it/200x200';
+  // $scope.calculateDimensions(350, 350);
+  // $scope.gifSrc = 'http://placehold.it/200x200';
 
   $scope.cameraOrLibraryPopup = function () {
     var cameraOrLibraryPopup = $ionicPopup.show({
@@ -318,8 +319,9 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
 
   $scope.$on('filtersDoneEvent', function (event, message) {
     console.log("filters supposed to be all done by now!");
-    $scope.create = false;
+    $scope.create = true;
     isFiltered = false;
+    callSave = true;
     filterIndex = 0;
     currentFilter = '';
     $scope.createOrSave();
@@ -643,6 +645,10 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
             $scope.gifSrc = image;
             $scope.create = false;
             $ionicLoading.hide();
+            if (callSave) {
+              callSave = false;
+              $scope.createOrSave();
+            }
             $scope.progress = 0;
           });
           //$scope.calculateDimensions($scope.gifOptions.gifWidth, $scope.gifOptions.gifHeight);
@@ -656,11 +662,8 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
       disableCropButton = false;
     } else {
       //if gif has already created then this works and here the created gif gets saved...
-
       if (isFiltered) {
-
         applyGifFilter();
-
       } else {
         $ionicPlatform.ready(function () {
 
@@ -679,7 +682,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
               console.log('create:' + "error");
             });
         });
-        //$state.go('app.browse',{});
+        $state.go('app.browse',{});
       }
     }
   }

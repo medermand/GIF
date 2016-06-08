@@ -83,13 +83,8 @@ slider div.handle.active:after, [slider] div.handle.active:after {
 slider div.bubble, [slider] div.bubble {
   display: none;
   cursor: default;
-<<<<<<< HEAD
   top: -27px;
   padding: 1px 3px 1px 5px;
-=======
-  top: -22px;
-  padding: 1px 3px 1px 3px;
->>>>>>> origin/master
   font-size: 0.9em;
   font-family: sans-serif;
 }

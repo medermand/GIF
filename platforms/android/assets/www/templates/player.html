@@ -5,5 +5,6 @@
 </div>
 <!--<slider floor="0" ceiling="100" step="1" ng-model="currentPercent" change="onSliderChange()"></slider>-->
 <slider floor="0" ceiling="{{ duration }}" step="0.1" precision="10" ng-model-low="start" ng-model-high="end"
-        change="onTrimChange(start, end)"></slider>
+        change=""></slider>
 
+<button class="button button-full button-calm" ng-click="trim(start, end)">Trim the Video and Convert to GIF</button>

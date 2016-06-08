@@ -1,7 +1,7 @@
 <ion-view view-title="Gif via Photos">
 
   <ion-nav-buttons side="right">
-    <button class="button button-clear button-small" ng-click="resizeAll()">
+    <button class="button button-clear button-small" ng-click="createOrSave()">
       {{create ? 'Create Gif' : 'Save Gif'}}
     </button>
   </ion-nav-buttons>
@@ -9,7 +9,7 @@
   <ion-content class="" style="text-align: center">
 
   </ion-content>
-  <img id="preview" ng-src="{{images[0]}}" width="{{gifWidth}}" hegiht="{{gifHeight}}" rel:animated_src="{{gifSrc}}" rel:auto_play="1" style="position: absolute; top: {{imageTop}}px; left: {{imageLeft}}px">
+  <img id="preview" ng-src="{{images[0]}}" width="{{gifWidth}}" hegiht="{{gifHeight}}" rel:animated_src="{{gifSrc}}" rel:auto_play="0" style="position: absolute; top: {{imageTop}}px; left: {{imageLeft}}px">
 
   <div id="editor" style="position: absolute; top: 50px; width: {{dev_width}}px; height: {{dev_height - 50}}px;"></div>
 
@@ -29,8 +29,7 @@
       <div class="" style="margin: auto;">
         <button class="button button-calm button-small" ng-click="previous()"><i class="icon ion-skip-backward"></i>
         </button>
-        <button class="button button-calm button-small" ng-click="playAndPause()"><i class="icon"
-                                                                                     ng-class="play ? 'ion-pause' : 'ion-play'"></i>
+        <button class="button button-calm button-small" ng-click="playAndPause()"><i class="icon" ng-class="play ? 'ion-pause' : 'ion-play'"></i>
         </button>
         <button class="button button-calm button-small" ng-click="next()"><i class="icon ion-skip-forward"></i></button>
       </div>
