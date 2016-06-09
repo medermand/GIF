@@ -1,7 +1,7 @@
 //angular.module('gifer.photo-controller', [])
 
 controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $stateParams, $window, $timeout, $cordovaImagePicker, $cordovaCapture, $cordovaFile, $ionicPlatform, $ionicModal, $ionicPopover, $ionicPopup, $ionicLoading, $ionicScrollDelegate, makeID, customPopup, $cordovaGoogleAds, $window) {
-
+  console.log("suposed to enter the state app.photo.....................................................");
   //**************************** variable declarations for scope *********************
   $rootScope.images = [];
   // the reason why images variable is rootScope, is because in video editing, I am gonna set this,
@@ -230,6 +230,11 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
     } else if ($stateParams.id == 1) {
       $scope.getImagesFromCamera();
     } else if($stateParams.id == 3) {
+        console.log("attention its before the rootScope images state param images stuff ################################")
+        $rootScope.images = $stateParams.images;
+        console.log($rootScope.images.length);
+        //console.log($rootScope.images);
+        console.log("attention its after the rootScope images state param images stuff ################################")
         for( var i = 0; i < $rootScope.images.length; i ++){
           $scope.tempImages.push($rootScope.images[i]);
         }
@@ -633,7 +638,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
 
       $ionicLoading.show({
         scope: $scope,
-        template: '<progress max="1" value="{{progress}}" class=""></progress>Loading...'
+        template: '<progress max="1" value="{{progress}}" class=""></progress>Creating...'
       })
 
       $scope.gifOptions.images = $scope.resizedImages;

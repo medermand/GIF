@@ -72,7 +72,8 @@ angular.module('gifer', ['ionic', 'gifer.controllers', 'gifer.services', 'gifer.
           }
         },
         params: {
-          id: 0
+          id: 0,
+          images: []
         }
       })
 

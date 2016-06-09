@@ -127,7 +127,7 @@ controllers.controller('AppCtrl', function ($scope, $cordovaDevice, $rootScope, 
 
         $ionicLoading.show({
             scope: $scope,
-            template: 'Trancoding the video...'
+            template: '<progress max="1" value="{{transcodeProgress}}" class=""></progress>Transcoding...'
         })
 
         VideoEditor.transcodeVideo(
@@ -150,7 +150,7 @@ controllers.controller('AppCtrl', function ($scope, $cordovaDevice, $rootScope, 
                 audioBitrate: 128000, // optional, audio bitrate for the video in bits, defaults to 128 kilobits (128000)
                 progress: function (info) {
                     $scope.$apply(function () {
-                        $scope.transcodeProgress = info;
+                        $scope.transcodeProgress = info/100;
                     })
                 } // optional, see docs on progress
             }
@@ -160,12 +160,14 @@ controllers.controller('AppCtrl', function ($scope, $cordovaDevice, $rootScope, 
         function videoTranscodeSuccess(result) {
             // result is the path to the transcoded video on the device
             $ionicLoading.hide();
+            $scope.transcodeProgress = 0;
             success_callback(result);
             console.log('videoTranscodeSuccess, result: ' + result);
         }
 
         function videoTranscodeError(err) {
             $ionicLoading.hide();
+            $scope.transcodeProgress = 0;
             customPopup.showAlert('Error!', 'Cannot convert video into suitable format');
             console.log('videoTranscodeError, err: ' + err);
         }
