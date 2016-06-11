@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.giferthree206123" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>MetaGIF</name>
+  <name>Giffin</name>
   <description>
-        MetaGIF is a cross platform application that provides users a set of great tools to create, play, edit and share gif files.
+        Giffin is a cross platform application that provides users a set of great tools to create, play, edit and share gif files.
     </description>
-  <author email="you@example.com" href="http://example.com.com/">
+  <author email="giffinteam@gmail.com" href="http://example.com.com/">
       Talha Şeker
       Meder Kutbidin Uulu
     </author>

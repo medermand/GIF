@@ -33,8 +33,8 @@ console.log("trim state has entered so that video controller has worked!");
                 $scope.progress = captureProgress;
             });
         },
-        sampleInterval: 10,
-        numWorkers: 2
+        sampleInterval: 20,
+        numWorkers: 4
     };
 
 

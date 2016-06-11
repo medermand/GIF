@@ -142,8 +142,8 @@
 		1CC73D996D9344DDAE11B681 /* SDAVAssetExportSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDAVAssetExportSession.h; path = "cordova-plugin-video-editor/SDAVAssetExportSession.h"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* MetaGIF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaGIF.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D91C89D541B4EF6BC100E30 /* libCordovaGenericAd.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libCordovaGenericAd.a; path = "MetaGIF/Plugins/cordova-plugin-extension/libCordovaGenericAd.a"; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Giffin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giffin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D91C89D541B4EF6BC100E30 /* libCordovaGenericAd.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libCordovaGenericAd.a; path = "Giffin/Plugins/cordova-plugin-extension/libCordovaGenericAd.a"; sourceTree = "<group>"; };
 		1E6BA9332F8A4AED91A88634 /* MessageUI.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		1F00C851330040118F12524D /* ELCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELCImagePickerController.h; path = "cordova-plugin-image-picker/ELCImagePickerController.h"; sourceTree = "<group>"; };
 		204357A06B804E5FB7689F6C /* AdSupport.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -178,8 +178,8 @@
 		30C1856519D5FC0A00212699 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
 		30E0CED940AF4BBEB0ED135E /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CDVNotification.bundle; sourceTree = "<group>"; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* MetaGIF-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MetaGIF-Prefix.pch"; sourceTree = "<group>"; };
-		32D220344E7D4EA8907DF3B7 /* libGPUImage.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libGPUImage.a; path = "MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/libGPUImage.a"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Giffin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Giffin-Prefix.pch"; sourceTree = "<group>"; };
+		32D220344E7D4EA8907DF3B7 /* libGPUImage.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libGPUImage.a; path = "Giffin/Plugins/cordova-plugin-instagram-assets-picker/libGPUImage.a"; sourceTree = "<group>"; };
 		39D1CE34749E4D59801A83C4 /* ImageIO.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		39F81F731E334EB3A43AE394 /* APPEmailComposerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APPEmailComposerImpl.m; path = "cordova-plugin-email-composer/APPEmailComposerImpl.m"; sourceTree = "<group>"; };
 		3B4C0E57E38F47ABB74D0FA1 /* CDVCapture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CDVCapture.bundle; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		89B8194AB8664F0A9A2A791E /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.m"; sourceTree = "<group>"; };
 		8A8E8C22A734446CBF2DF0C8 /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELCAssetTablePicker.h; path = "cordova-plugin-image-picker/ELCAssetTablePicker.h"; sourceTree = "<group>"; };
 		8CD019D939284C3482747BBE /* SDAVAssetExportSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDAVAssetExportSession.m; path = "cordova-plugin-video-editor/SDAVAssetExportSession.m"; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* MetaGIF-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MetaGIF-Info.plist"; path = "../MetaGIF-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Giffin-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Giffin-Info.plist"; path = "../Giffin-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		8E63528374404EF4BD804000 /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ELCAssetTablePicker.m; path = "cordova-plugin-image-picker/ELCAssetTablePicker.m"; sourceTree = "<group>"; };
 		9379AE92D1334498A6B70DC7 /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELCAlbumPickerController.h; path = "cordova-plugin-image-picker/ELCAlbumPickerController.h"; sourceTree = "<group>"; };
 		9419A9CF322C4ED89E67C6B5 /* CDVAdMobPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVAdMobPlugin.m; path = "cordova-plugin-admobpro/CDVAdMobPlugin.m"; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 		AB3644BE168A43E3BFA8EB6E /* QuartzCore.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B52D7D748B7E411FA4E9452D /* CDVAppRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVAppRate.h; path = "cordova-plugin-apprate/CDVAppRate.h"; sourceTree = "<group>"; };
 		B6D211AAD5FD4810BC1CADD8 /* ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELCAssetPickerFilterDelegate.h; path = "cordova-plugin-image-picker/ELCAssetPickerFilterDelegate.h"; sourceTree = "<group>"; };
-		B7C9D040F795473BBE1D4BC0 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		B7C9D040F795473BBE1D4BC0 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Giffin/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		BB6174966E284F4F887EC35D /* ELCAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELCAssetCell.h; path = "cordova-plugin-image-picker/ELCAssetCell.h"; sourceTree = "<group>"; };
 		BBD8C01AA76F4131AC2A900D /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		BC63212E3E9F4FBEAFBC68B7 /* CoreVideo.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -276,9 +276,9 @@
 		EDC2D8C6F61042DFB5E0655B /* APPEmailComposerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APPEmailComposerImpl.h; path = "cordova-plugin-email-composer/APPEmailComposerImpl.h"; sourceTree = "<group>"; };
 		EED8CA055C894665B93932E6 /* AdMobMediation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdMobMediation.m; path = "cordova-plugin-admobpro/AdMobMediation.m"; sourceTree = "<group>"; };
 		F02B1DB636324BFDBDDBB94D /* IGAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGAssetsPicker.h; path = "cordova-plugin-instagram-assets-picker/IGAssetsPicker.h"; sourceTree = "<group>"; };
-		F51DCC8BECD84706810EE560 /* GPUImageHeaders */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = GPUImageHeaders; path = "MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders"; sourceTree = "<group>"; };
+		F51DCC8BECD84706810EE560 /* GPUImageHeaders */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = GPUImageHeaders; path = "Giffin/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders"; sourceTree = "<group>"; };
 		F5C868EC474348AEB0DE76A2 /* IGCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGCropView.m; path = "cordova-plugin-instagram-assets-picker/IGCropView.m"; sourceTree = "<group>"; };
-		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = MetaGIF/config.xml; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Giffin/config.xml; sourceTree = "<group>"; };
 		F8C80075675245A7BF56922C /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELCAssetSelectionDelegate.h; path = "cordova-plugin-image-picker/ELCAssetSelectionDelegate.h"; sourceTree = "<group>"; };
 		F928CCCE282A4346960C9836 /* EventKitUI.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		FA748E732C3341D799CF9AB8 /* CoreLocation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -337,13 +337,13 @@
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
 			);
 			name = Classes;
-			path = MetaGIF/Classes;
+			path = Giffin/Classes;
 			sourceTree = SOURCE_ROOT;
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* MetaGIF.app */,
+				1D6058910D05DD3D006BFB54 /* Giffin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,11 +369,11 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* MetaGIF-Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* Giffin-Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
-			path = MetaGIF;
+			path = Giffin;
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -381,7 +381,7 @@
 			children = (
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
-				8D1107310486CEB800E47090 /* MetaGIF-Info.plist */,
+				8D1107310486CEB800E47090 /* Giffin-Info.plist */,
 				761DB9BB90A84C51A79967E4 /* Settings.bundle */,
 				6B3EBA7610BA413085652B28 /* ELCAlbumPickerController.xib */,
 				4C9548BD74BA43BEA95C13A8 /* ELCAssetPicker.xib */,
@@ -393,7 +393,7 @@
 				30E0CED940AF4BBEB0ED135E /* CDVNotification.bundle */,
 			);
 			name = Resources;
-			path = MetaGIF/Resources;
+			path = Giffin/Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -520,7 +520,7 @@
 				7AA965C3B78B47C2B772639E /* AdMobMediation.h */,
 			);
 			name = Plugins;
-			path = MetaGIF/Plugins;
+			path = Giffin/Plugins;
 			sourceTree = SOURCE_ROOT;
 		};
 		308D052D1370CCF300D202BF /* icons */ = {
@@ -574,9 +574,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* MetaGIF */ = {
+		1D6058900D05DD3D006BFB54 /* Giffin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MetaGIF" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Giffin" */;
 			buildPhases = (
 				304B58A110DAC018002A0835 /* Copy www directory */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
@@ -588,9 +588,9 @@
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
 			);
-			name = MetaGIF;
-			productName = MetaGIF;
-			productReference = 1D6058910D05DD3D006BFB54 /* MetaGIF.app */;
+			name = Giffin;
+			productName = Giffin;
+			productReference = 1D6058910D05DD3D006BFB54 /* Giffin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -606,7 +606,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MetaGIF" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Giffin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -630,7 +630,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* MetaGIF */,
+				1D6058900D05DD3D006BFB54 /* Giffin */,
 			);
 		};
 /* End PBXProject section */
@@ -774,22 +774,22 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"MetaGIF/Plugins/cordova-plugin-instagram-assets-picker\"",
-					"\"MetaGIF/Plugins/cordova-plugin-instagram-assets-picker\"",
-					"\"MetaGIF/Plugins/cordova-plugin-admobpro\"",
+					"\"Giffin/Plugins/cordova-plugin-instagram-assets-picker\"",
+					"\"Giffin/Plugins/cordova-plugin-instagram-assets-picker\"",
+					"\"Giffin/Plugins/cordova-plugin-admobpro\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MetaGIF/MetaGIF-Prefix.pch";
+				GCC_PREFIX_HEADER = "Giffin/Giffin-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
-				INFOPLIST_FILE = "MetaGIF/MetaGIF-Info.plist";
+				INFOPLIST_FILE = "Giffin/Giffin-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker\"",
-					"\"$(SRCROOT)/MetaGIF/Plugins/cordova-plugin-extension\"",
+					"\"$(SRCROOT)/Giffin/Plugins/cordova-plugin-instagram-assets-picker\"",
+					"\"$(SRCROOT)/Giffin/Plugins/cordova-plugin-extension\"",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -804,7 +804,7 @@
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ionicframework.giferthree;
-				PRODUCT_NAME = MetaGIF;
+				PRODUCT_NAME = Giffin;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -820,20 +820,20 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"MetaGIF/Plugins/cordova-plugin-instagram-assets-picker\"",
-					"\"MetaGIF/Plugins/cordova-plugin-instagram-assets-picker\"",
-					"\"MetaGIF/Plugins/cordova-plugin-admobpro\"",
+					"\"Giffin/Plugins/cordova-plugin-instagram-assets-picker\"",
+					"\"Giffin/Plugins/cordova-plugin-instagram-assets-picker\"",
+					"\"Giffin/Plugins/cordova-plugin-admobpro\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MetaGIF/MetaGIF-Prefix.pch";
+				GCC_PREFIX_HEADER = "Giffin/Giffin-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
-				INFOPLIST_FILE = "MetaGIF/MetaGIF-Info.plist";
+				INFOPLIST_FILE = "Giffin/Giffin-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker\"",
-					"\"$(SRCROOT)/MetaGIF/Plugins/cordova-plugin-extension\"",
+					"\"$(SRCROOT)/Giffin/Plugins/cordova-plugin-instagram-assets-picker\"",
+					"\"$(SRCROOT)/Giffin/Plugins/cordova-plugin-extension\"",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -848,7 +848,7 @@
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ionicframework.giferthree;
-				PRODUCT_NAME = MetaGIF;
+				PRODUCT_NAME = Giffin;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -947,7 +947,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MetaGIF" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Giffin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -956,7 +956,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MetaGIF" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Giffin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

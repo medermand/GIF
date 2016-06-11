@@ -876,7 +876,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
           showNewButton: false,
           export: {
             showButton: true,
-            type: PhotoEditorSDK.RenderType.DATAURL,
+            type: PhotoEditorSDK.RenderType.IMAGE,
             download: false
           },
           image: myImage,
@@ -893,19 +893,20 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
         })
 
         editor.on('export', function (result, innerEditor) {
-
+          console.log("result of the returned image would be this: ");
+          console.dir(result);
           $ionicPlatform.ready(function () {
 
             $scope.$apply(function () {
               $scope.resizedImages[index] = result;
               $rootScope.images[index] = result;
               $scope.create = true;
-
-            });
-            $timeout(function () {
+              $timeout(function () {
               editor.dispose();
               $scope.showBottomBar = true;
             }, 1);
+            });
+            
           });
         })
       })
