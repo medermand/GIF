@@ -9,6 +9,7 @@ console.log("trim state has entered so that video controller has worked!");
     var sup1;
     $rootScope.images = [];
     $scope.progress = 0;
+    var i  = 0;
     //$rootScope.trimmedVideoPath = '';
     $scope.gifOptions = {
         gifWidth: 300,
@@ -26,6 +27,7 @@ console.log("trim state has entered so that video controller has worked!");
         fontColor: '#ffffff',
         'progressCallback': function (captureProgress) {
             console.log("supposed to retrieve the progress data outside the apply");
+            console.log(i++);
             $scope.$apply(function () {
                 console.log("supposed to retrieve the progress data");
                 $scope.progress = captureProgress;
@@ -79,7 +81,7 @@ console.log("trim state has entered so that video controller has worked!");
         start = strt;
         finish = end;
 
-        var maxVideoSize = 20;
+        var maxVideoSize = 10;
         var trimmedVideoSize = finish - start;
 
         //if (!isTrimChanged) {
@@ -143,7 +145,7 @@ console.log("trim state has entered so that video controller has worked!");
         console.log('crateGIF is called');
         $ionicLoading.show({
             scope: $scope,
-            template: '<progress max="1" value="{{progress}}" class=""></progress>Creating...'
+            template: '<progress max="1" value="{{progress}}" class=""></progress>Creating a GIF...'
         })
         $scope.gifOptions.video = $rootScope.trimmedVideoPath;
         //{'video': $rootScope.trimmedVideoPath}
@@ -152,16 +154,51 @@ console.log("trim state has entered so that video controller has worked!");
             if (!obj.error) {
                 console.log('video is converted to GIF');
                 $scope.gifSrc = obj.image;
+
+                console.log( $scope.gifSrc);
+
+                console.log('this is decodedData');
+                //save the file to a particular location.
+                var fileName = makeID();
+                var decodedData = window.atob(encodedData);
+                console.log(decodedData);
+                saveFile(fileName, decodedData, function(){
+                    console.log('the file is saved');
+                    
+                    var gifDirectory = cordova.file.dataDirectory + "fileName/" + decodedData;
+                    parseGIF(gifDirectory);
+
+                })
                 //$state.go('app.video');
 
-                console.log("there used to be the image object but that works fine so...");
+                console.log("there used to be the image object but that works fine so...");    
 
-                var image = document.createElement("img");
+            }
+        });
+    }
+
+
+    var saveFile = function(fileName, file, callback_success) {
+        $ionicPlatform.ready(function () {
+
+          $cordovaFile.writeFile(cordova.file.dataDirectory, fileName, file, true)
+            .then(function (success) {
+                callback_success();
+            }, function (error) {
+              // error
+            });
+        });
+    }
+
+
+    var parseGIF = function(gifPath) {
+        console.log('starting to parse the gif');
+        var image = document.createElement("img");
                 var elem = angular.element(image);
                 elem.attr('ng-src', 'img/ionic.png');
                 elem.attr('rel:auto_play', 0);
-                //elem.attr('rel:animated_src', $scope.gifSrc);
-                elem.attr('rel:animated_src', 'img/cat.gif'); // try out this one.
+                elem.attr('rel:animated_src', gifPath);
+
 
                 var option = {
                     gif: image,
@@ -194,9 +231,8 @@ console.log("trim state has entered so that video controller has worked!");
                     $state.go('app.photo', {id: 3, images: $rootScope.images});
                     console.log("after!!!!!!!!!!!! the state app photo called");
                 });
-
-            }
-        });
     }
+
+    
 
 })

@@ -36,8 +36,8 @@ controllers.controller('AppCtrl', function ($scope, $cordovaDevice, $rootScope, 
                         })
 
                         //without trancoding
-                        //$rootScope.originalVideoPath = result.filePath;
-                        //$state.go('app.trim', {id: id});
+                        // $rootScope.originalVideoPath = result.filePath;
+                        // $state.go('app.trim', {id: id});
 
 
                     },
@@ -144,7 +144,7 @@ controllers.controller('AppCtrl', function ($scope, $cordovaDevice, $rootScope, 
                 width: 300, // optional, see note below on width and height
                 height: 300,
                 videoBitrate: 400000, // optional, bitrate in bits, defaults to 1 megabit (1000000)
-                fps: 50, // optional (android only), defaults to 24
+                fps: 10, // optional (android only), defaults to 24
                 audioChannels: 2, // optional, number of audio channels, defaults to 2
                 audioSampleRate: 44100, // optional, sample rate for the audio, defaults to 44100
                 audioBitrate: 128000, // optional, audio bitrate for the video in bits, defaults to 128 kilobits (128000)

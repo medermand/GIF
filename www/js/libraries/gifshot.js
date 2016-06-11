@@ -1122,6 +1122,8 @@ AnimatedGIF = function (utils, frameWorkerCode, NeuQuant, GifWriter) {
       });
       gifWriter.end();
       onRenderProgressCallback(1);
+      console.log('####################THESE ARE MY FRAMES##################');
+      console.log(this.frames[0].pixels);
       this.frames = [];
       this.generatingGIF = false;
       if (utils.isFunction(callback)) {

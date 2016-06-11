@@ -36,8 +36,8 @@ controllers.controller('AppCtrl', function ($scope, $cordovaDevice, $rootScope, 
                         })
 
                         //without trancoding
-                        //$rootScope.originalVideoPath = result.filePath;
-                        //$state.go('app.trim', {id: id});
+                        // $rootScope.originalVideoPath = result.filePath;
+                        // $state.go('app.trim', {id: id});
 
 
                     },
