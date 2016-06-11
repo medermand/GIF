@@ -904,7 +904,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
               $timeout(function () {
               editor.dispose();
               $scope.showBottomBar = true;
-            }, 1);
+            }, 10);
             });
             
           });

@@ -125,7 +125,7 @@ controllers.controller('SettingsCtrl', function($rootScope, $scope, $ionicPlatfo
   $scope.mailThing = function(){
     $cordovaEmailComposer.isAvailable().then(function() {
       var email = {
-        to: 'gifer@gmail.com',
+        to: 'giffinteam@gmail.com',
         cc: '',
         bcc: [],
         attachments: [],

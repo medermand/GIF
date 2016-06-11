@@ -876,7 +876,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
           showNewButton: false,
           export: {
             showButton: true,
-            type: PhotoEditorSDK.RenderType.IMAGE,
+            type: PhotoEditorSDK.RenderType.DATAURL,
             download: false
           },
           image: myImage,
@@ -904,7 +904,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
               $timeout(function () {
               editor.dispose();
               $scope.showBottomBar = true;
-            }, 1);
+            }, 10);
             });
             
           });

@@ -16,7 +16,6 @@ controllers.controller('AppCtrl', function ($scope, $cordovaDevice, $rootScope, 
     $scope.video = function (id) {
         $rootScope.originalVideoPath = '';
         if (id == 0) {
-
             /*In fact this method could be put in video-controller class, but for trimming process, the player needs to
              know in advance the source of the video. So, here the source of the video is known and direct the page to trimming page.
              Actually, this method is moved to video controller, and after getting the source, updated the html page, but it did
@@ -50,54 +49,6 @@ controllers.controller('AppCtrl', function ($scope, $cordovaDevice, $rootScope, 
                         showGrid: true // determines whether to show the grid for cropping - defaults to false
                     }
                 );
-
-                var adMobIdAndroid = {
-                    admob_banner_key: 'ca-app-pub-5609407643536100/7546850871',
-                    admob_interstitial_key: 'ca-app-pub-5609407643536100/2977050471'
-                };
-
-                var adMobIdiOS = {
-                    admob_banner_key: 'ca-app-pub-5609407643536100/7407250079',
-                    admob_interstitial_key: 'ca-app-pub-5609407643536100/1360716476'
-                };
-
-                var adMobPosition = {
-                    BOTTOM_CENTER: 8
-                }; 
-
-                $rootScope.adMobPosition = adMobPosition;
-
-                var platform = $cordovaDevice.getPlatform();
-                if (platform == 'iOS') {
-                    $rootScope.adMobId = adMobIdiOS;
-                }else if (platform == 'Android') {
-                    $rootScope.adMobId = adMobIdAndroid;   
-                }
-
-                try {
-                    console.log('Show Banner Ad');       
-                    $cordovaGoogleAds.createBanner({
-                        adId: $rootScope.adMobId.admob_banner_key,
-                        position: $rootScope.adMobPosition.BOTTOM_CENTER,
-                        isTesting: true,
-                        autoShow: true
-                    });
-         
-                } catch (e) {
-                    alert(e);
-                }
-
-                try {
-                    console.log('Prepare Interstitial Ad');      
-                    $cordovaGoogleAds.prepareInterstitial({
-                        adId: $rootScope.adMobId.admob_interstitial_key,
-                        isTesting: true,
-                        autoShow: false
-                    });
-                     
-                } catch (e) {
-                    alert(e);
-                }
 
                 // $timeout(function() {
             //   $cordovaGoogleAds.showInterstitial();
@@ -198,6 +149,55 @@ controllers.controller('AppCtrl', function ($scope, $cordovaDevice, $rootScope, 
             })
             .error(function (error) {
             })
+
+
+            var adMobIdAndroid = {
+                    admob_banner_key: 'ca-app-pub-5609407643536100/7546850871',
+                    admob_interstitial_key: 'ca-app-pub-5609407643536100/2977050471'
+                };
+
+                var adMobIdiOS = {
+                    admob_banner_key: 'ca-app-pub-5609407643536100/7407250079',
+                    admob_interstitial_key: 'ca-app-pub-5609407643536100/1360716476'
+                };
+
+                var adMobPosition = {
+                    BOTTOM_CENTER: 8
+                }; 
+
+                $rootScope.adMobPosition = adMobPosition;
+
+                var platform = $cordovaDevice.getPlatform();
+                if (platform == 'iOS') {
+                    $rootScope.adMobId = adMobIdiOS;
+                }else if (platform == 'Android') {
+                    $rootScope.adMobId = adMobIdAndroid;   
+                }
+
+                try {
+                    console.log('Show Banner Ad');       
+                    $cordovaGoogleAds.createBanner({
+                        adId: $rootScope.adMobId.admob_banner_key,
+                        position: $rootScope.adMobPosition.BOTTOM_CENTER,
+                        isTesting: true,
+                        autoShow: true
+                    });
+         
+                } catch (e) {
+                    alert(e);
+                }
+
+                try {
+                    console.log('Prepare Interstitial Ad');      
+                    $cordovaGoogleAds.prepareInterstitial({
+                        adId: $rootScope.adMobId.admob_interstitial_key,
+                        isTesting: true,
+                        autoShow: false
+                    });
+                     
+                } catch (e) {
+                    alert(e);
+                }
     })
 
 });

@@ -39,7 +39,7 @@ console.log("trim state has entered so that video controller has worked!");
 
 
     var videoRecord = function () {
-        var options = {limit: 1, duration: 150};
+        var options = {limit: 1, duration: }150;
         $ionicPlatform.ready(function () {
             $cordovaCapture.captureVideo(options).then(function (videoData) {
                 // Success! Video data is here

@@ -39,7 +39,7 @@ console.log("trim state has entered so that video controller has worked!");
 
 
     var videoRecord = function () {
-        var options = {limit: 1, duration: 150};
+        var options = {limit: 1, duration: }150;
         $ionicPlatform.ready(function () {
             $cordovaCapture.captureVideo(options).then(function (videoData) {
                 // Success! Video data is here
@@ -160,6 +160,12 @@ console.log("trim state has entered so that video controller has worked!");
                 console.log('this is decodedData');
                 //save the file to a particular location.
                 var fileName = makeID();
+
+                /*there are two ways of getting images from a gif:
+                1.Get frames directly from gifshot library
+                2.Convert the base64 gif to other format(like download.gif) and 
+                    save it to somewhere and link it to gifparser.
+                */
                 var decodedData = window.atob(encodedData);
                 console.log(decodedData);
                 saveFile(fileName, decodedData, function(){
