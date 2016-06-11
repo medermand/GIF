@@ -33,10 +33,25 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
   $scope.play = false;
   $scope.isCopyButtonSelected = false;
 
+  /*it checks if there are new items are selected while getting photos
+     * either from a library or camera. Set true if at least one photo is selected*/
+  var newItemAdded = true;
+
+    /*
+     * In the applications, there are two ways of getting photos:
+     * 1.As default opens when user wants to create GIF from photos
+     * 2.A user can add more photos from edit sheet page.
+     *
+     * The first case, as default calls createOrSave method, but the second case
+     * should not call by default. For the second case, when a user closes the
+     * edit sheet modal, then it should call this method. So, we need a variable
+     * to distinguish which one is being called.*/
+  var isAddPhotosButtonClicked = false;
+
   $scope.gifOptions = {
     gifWidth: 300,
     gifHeight: 300,
-    interval: 0.1,
+    interval: 0.4,
     numFrames: 10,
     text: '',
     fontWeight: 'normal',
@@ -54,8 +69,8 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
         $scope.progress = captureProgress;
       });
     },
-    sampleInterval: 10,
-    numWorkers: 2
+    sampleInterval: 20,
+    numWorkers: 4
   };
 
   var disableCropButton = true;
@@ -172,7 +187,14 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
             console.log("results " + i + " supposed to be this: " + src);
             $rootScope.images.push(src);
             console.log("rootScope has no error.................................................");
-            $scope.tempImages.push(src);
+            
+            //########## UNCOMMENT OLD TO RETURN OLD VERSION ##########//
+
+            //-----OLD------//
+            //$scope.tempImages.push(src);
+
+            //-----NEW------//
+            $scope.resizedImages.push(src);
           }
           console.log("scope.brodcast get images done eevent supposed to fired");
           $scope.$broadcast('getImagesDoneEvent', 1);
@@ -191,7 +213,17 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
 
     $scope.$on('getImagesDoneEvent', function (event, message) {
       console.log("get images done event has entered!!**************************************************************");
-      $scope.resizeAll();
+      
+      //########## UNCOMMENT OLD TO RETURN OLD VERSION ##########//
+
+      //-----OLD------//
+      //$scope.resizeAll();
+
+      //-----NEW------//
+      $scope.create = true;
+      if (!isAddPhotosButtonClicked) {
+          $scope.createOrSave();
+      }
     });
 
     $scope.getImagesFromCamera = function () {
@@ -207,7 +239,13 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
           for (var i = 0; i < length; i++) {
             var src = imageData[i].fullPath;
             $rootScope.images.push(src);
-            $scope.tempImages.push(src);
+            //########## UNCOMMENT OLD TO RETURN OLD VERSION ##########//
+
+            //-----OLD------//
+            //$scope.tempImages.push(src);
+
+            //-----NEW------//
+            $scope.resizedImages.push(src);
           }
           //$ionicLoading.hide();
           $scope.$broadcast('getImagesDoneEvent', 1);
@@ -236,7 +274,13 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
         //console.log($rootScope.images);
         console.log("attention its after the rootScope images state param images stuff ################################")
         for( var i = 0; i < $rootScope.images.length; i ++){
-          $scope.tempImages.push($rootScope.images[i]);
+          //########## UNCOMMENT OLD TO RETURN OLD VERSION ##########//
+
+          //-----OLD-----//
+          //$scope.tempImages.push($rootScope.images[i]);
+
+          //-----NEW------//
+          $scope.resizedImages.push($rootScope.images[i]);
         }
       $scope.$broadcast('getImagesDoneEvent', 1);
     }
@@ -337,81 +381,83 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
     console.log("entered the filter applier");
     var filterToApply = currentFilter;
 
-    for (var i = 0; i < $scope.resizedImages.length; i++) {
+    $scope.resizeAll(function(){
+        for (var i = 0; i < $scope.resizedImages.length; i++) {
 
-      Caman('#preview', $scope.resizedImages[i], function () {
-        switch (filterToApply) {
-          case 'original':
+            Caman('#preview', $scope.resizedImages[i], function () {
+              switch (filterToApply) {
+                case 'original':
 
-            break;
-          case 'aden':
-            this.hue(-20).contrast(-10).saturation(-15).brightness(20);
-            break;
-          case 'inkwell':
-            this.sepia(30).contrast(10).brightness(10).greyscale();
-            break;
-          case 'reyes':
-            this.sepia(22).brightness(10).contrast(-15).saturation(-25);
-            break;
-          case 'gingham':
-            this.brightness(5).hue(-10);
-            break;
-          case 'toaster':
-            this.contrast(50).brightness(-10);
-            break;
-          case 'walden':
-            this.brightness(10).hue(-10).sepia(30).saturation(60);
-            break;
-          case 'hudson':
-            this.brightness(20).contrast(-10).saturation(10);
-            break;
-          case 'earlybird':
-            this.contrast(-10).sepia(20);
-            break;
-          case 'mayfair':
-            this.contrast(10).saturation(10);
-            break;
-          case 'lofi':
-            this.contrast(15).saturation(10);
-            break;
-          case '_1977':
-            this.contrast(10).saturation(30).brightness(10);
-            break;
-          case 'brooklyn':
-            this.contrast(-10).brightness(10);
-            break;
-          case 'xpro2':
-            this.sepia(30);
-            break;
-          case 'nashville':
-            this.sepia(20).contrast(20).brightness(5).saturation(20);
-            break;
-          case 'lark':
-            this.contrast(-10);
-            break;
-          case 'moon':
-            this.greyscale().contrast(10).brightness(10);
-            break;
-          case 'clarendon':
-            this.contrast(20).saturation(35);
-            break;
-          case 'willow':
-            this.greyscale().contrast(-5).brightness(-10);
-            break;
-          case 'rise':
-            this.brightness(5).sepia(20).contrast(-10).saturation(-10);
-            break;
-          case 'slumber':
-            this.saturation(66).brightness(5);
-            break;
-          default:
-        }
-        this.render(function () {
-          var base = this.toBase64();
-          $scope.$broadcast('filterAppliedEvent', 1);
+                  break;
+                case 'aden':
+                  this.hue(-20).contrast(-10).saturation(-15).brightness(20);
+                  break;
+                case 'inkwell':
+                  this.sepia(30).contrast(10).brightness(10).greyscale();
+                  break;
+                case 'reyes':
+                  this.sepia(22).brightness(10).contrast(-15).saturation(-25);
+                  break;
+                case 'gingham':
+                  this.brightness(5).hue(-10);
+                  break;
+                case 'toaster':
+                  this.contrast(50).brightness(-10);
+                  break;
+                case 'walden':
+                  this.brightness(10).hue(-10).sepia(30).saturation(60);
+                  break;
+                case 'hudson':
+                  this.brightness(20).contrast(-10).saturation(10);
+                  break;
+                case 'earlybird':
+                  this.contrast(-10).sepia(20);
+                  break;
+                case 'mayfair':
+                  this.contrast(10).saturation(10);
+                  break;
+                case 'lofi':
+                  this.contrast(15).saturation(10);
+                  break;
+                case '_1977':
+                  this.contrast(10).saturation(30).brightness(10);
+                  break;
+                case 'brooklyn':
+                  this.contrast(-10).brightness(10);
+                  break;
+                case 'xpro2':
+                  this.sepia(30);
+                  break;
+                case 'nashville':
+                  this.sepia(20).contrast(20).brightness(5).saturation(20);
+                  break;
+                case 'lark':
+                  this.contrast(-10);
+                  break;
+                case 'moon':
+                  this.greyscale().contrast(10).brightness(10);
+                  break;
+                case 'clarendon':
+                  this.contrast(20).saturation(35);
+                  break;
+                case 'willow':
+                  this.greyscale().contrast(-5).brightness(-10);
+                  break;
+                case 'rise':
+                  this.brightness(5).sepia(20).contrast(-10).saturation(-10);
+                  break;
+                case 'slumber':
+                  this.saturation(66).brightness(5);
+                  break;
+                default:
+              }
+              this.render(function () {
+                var base = this.toBase64();
+                $scope.$broadcast('filterAppliedEvent', 1);
+              });
         });
-      });
-    }
+      }
+    });
   }
 
   var crop = function () {
@@ -465,7 +511,7 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
     canvas.height = finalHeight;
 
     var img = new Image();
-    img.src = $scope.tempImages[i];
+    img.src = $rootScope.images[i];
     img.addEventListener('load', function () {
       context.drawImage(img, 0, 0, finalWidth, finalHeight);
       callback_success(canvas.toDataURL(), i);
@@ -484,11 +530,13 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
     resizeIndex = 0;
     length = 0;
     $scope.$apply(function () {
-      $scope.create = true;
-      $scope.resizedImages;
       $ionicLoading.hide();
-      $scope.createOrSave();
-      $scope.tempImages = [];
+
+      //////OLD//////
+      //$scope.create = true;
+      //$scope.resizedImages;
+      //$scope.createOrSave();
+      //$scope.tempImages = [];
     });
     console.log('all images are resized successfully **********************************************************************');
   });
@@ -496,22 +544,38 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
   $scope.resizeAll = function () {
     console.log("resize all function has entered and there supposed to be loading show up *******************************************");
     $ionicLoading.show({
-      template: 'Loading...'
+      template: 'Resizing Images...'
     });
 
-    length = $scope.tempImages.length;
-    for (var i = 0; i < $scope.tempImages.length; i++) {
-      console.log(i);
-      resizeImage(i, $scope.gifOptions.gifWidth, $scope.gifOptions.gifHeight, function (resizedImage, index) {
+    //-----OLD------//
+    //length = $scope.tempImages.length;
+
+    //-----NEW------//
+    length = $scope.resizedImages.length;
+    var resizeImageCallBackFunc = function (resizedImage, index) {
         console.log('resize images return');
         $scope.$apply(function () {
           $scope.resizedImages.push(resizedImage);
         });
 
         //console.log(resizedImage);
-        $scope.$broadcast('resizeAppliedEvent', 1);
-      })
-    }
+        ///////OLD//////
+        //$scope.$broadcast('resizeAppliedEvent', 1);
+
+        ///////NEW//////
+        if (indeex == (length - 1)) {
+            $ionicLoading.hide();
+            callback_success();
+            //break;
+        }else{
+          index++;
+          resizeImage(index, $scope.gifOptions.gifWidth, $scope.gifOptions.gifHeight, resizeImageCallBackFunc())
+        }
+      }
+    //for (var i = 0; i < length;) {
+      //console.log(i);
+      resizeImage(0, $scope.gifOptions.gifWidth, $scope.gifOptions.gifHeight, resizeImageCallBackFunc())
+    //}
   }
 
   $scope.$on('cropAppliedEvent', function () {
@@ -530,27 +594,53 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
     $scope.createOrSave();
   });
 
+  // $scope.cropSheet = function () {
+  //   $ionicLoading.show({
+  //     template: 'Cropping the GIF...'
+  //   });
+  //   for (var i = 0; i < $scope.resizedImages.length; i++) {
+  //     console.log('cropsheet');
+
+  //     var image = new Image();
+  //     console.log('cropsheet');
+  //     image.src = $scope.resizedImages[i];
+
+  //     getCroppedImage(image, i, function (success, index) {
+  //       $scope.resizedImages[index] = success;
+  //       console.log('crop return successful');
+  //       //$scope.cropModal.hide();
+  //       //console.log(success);
+  //       $scope.$broadcast('cropAppliedEvent', 1)
+  //     });
+  //     //});
+  //   }
+  // }
+
   $scope.cropSheet = function () {
-    $ionicLoading.show({
-      template: 'Cropping the GIF...'
-    });
-    for (var i = 0; i < $scope.resizedImages.length; i++) {
-      console.log('cropsheet');
+        //it resizes first, and when the method returns success, gif is cropped.
+        $scope.resizeAll(function () {
+            $ionicLoading.show({
+                template: 'Cropping the GIF...'
+            });
+            for (var i = 0; i < $scope.resizedImages.length; i++) {
+                console.log('cropsheet');
 
-      var image = new Image();
-      console.log('cropsheet');
-      image.src = $scope.resizedImages[i];
+                var image = new Image();
+                console.log('cropsheet');
+                image.src = $scope.resizedImages[i];
 
-      getCroppedImage(image, i, function (success, index) {
-        $scope.resizedImages[index] = success;
-        console.log('crop return successful');
-        //$scope.cropModal.hide();
-        //console.log(success);
-        $scope.$broadcast('cropAppliedEvent', 1)
-      });
-      //});
+                getCroppedImage(image, i, function (success, index) {
+                    $scope.resizedImages[index] = success;
+                    console.log('crop return successful');
+                    //$scope.cropModal.hide();
+                    //console.log(success);
+                    $scope.$broadcast('cropAppliedEvent', 1)
+                });
+                //});
+            }
+        });
+
     }
-  }
 
   $ionicModal.fromTemplateUrl('templates/edit-sheets.html', {
     scope: $scope
@@ -591,9 +681,13 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
         text: 'OK!',
         type: 'button-calm',
         onTap: function (e) {
-          $scope.resizedImages = [];
-          $scope.tempImages = $rootScope.images;
-          resizeAll();
+          //-------OLD---------//
+          // $scope.resizedImages = [];
+          // $scope.tempImages = $rootScope.images;
+          // resizeAll();
+          //-------NEW---------//
+          $scope.create = true;
+          $scope.createOrSave();
         }
       }]
     });
