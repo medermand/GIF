@@ -2,11 +2,408 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0df5ab58-d639-4148-b32b-f564151761df" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/giferThree.xcodeproj/project.xcworkspace/xcuserdata/Meder.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/platforms/ios/giferThree.xcodeproj/project.xcworkspace/xcuserdata/Meder.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF.xcodeproj/project.xcworkspace/xcuserdata/Meder.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF.xcodeproj/project.xcworkspace/xcuserdata/talhaseker.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF.xcodeproj/xcuserdata/Meder.xcuserdatad/xcschemes/MetaGIF.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF.xcodeproj/xcuserdata/Meder.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF.xcodeproj/xcuserdata/talhaseker.xcuserdatad/xcschemes/MetaGIF.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF.xcodeproj/xcuserdata/talhaseker.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Classes/AppDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Classes/AppDelegate.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Classes/MainViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Classes/MainViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Classes/MainViewController.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/MetaGIF-Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/MetaGIF-Prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/AdMobMediation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/AdMobMediation.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/CDVAdMobPlugin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/CDVAdMobPlugin.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/GoogleMobileAds" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/DFPBannerView.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/DFPInterstitial.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/DFPRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADAdDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADAdLoader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADAdReward.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADAdSize.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADBannerView.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCorrelator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADExtras.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADInAppPurchase.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADInterstitial.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADMobileAds.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADNativeAd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADNativeAdImage.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADNativeContentAd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADRequestError.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADSearchBannerView.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADSearchRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADVideoController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GADVideoOptions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GoogleMobileAds.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-admobpro/GoogleMobileAds.framework/Modules/module.modulemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-app-preferences/AppPreferences.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-app-preferences/AppPreferences.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-apprate/CDVAppRate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-apprate/CDVAppRate.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-camera/CDVCamera.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-camera/CDVCamera.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-camera/CDVExif.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-camera/CDVJpegHeaderWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-camera/CDVJpegHeaderWriter.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-camera/UIImage+CropScaleOrientation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-camera/UIImage+CropScaleOrientation.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-console/CDVLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-console/CDVLogger.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-device/CDVDevice.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-device/CDVDevice.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-dialogs/CDVNotification.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-dialogs/CDVNotification.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-email-composer/APPEmailComposer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-email-composer/APPEmailComposer.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-email-composer/APPEmailComposerImpl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-email-composer/APPEmailComposerImpl.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-extension/CDVPluginExt.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-extension/CDVPluginExt.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-extension/GenericAdPlugin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-extension/PluginAdapterDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-extension/libCordovaGenericAd.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-file/CDVAssetLibraryFilesystem.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-file/CDVAssetLibraryFilesystem.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-file/CDVFile.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-file/CDVFile.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-file/CDVLocalFilesystem.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-file/CDVLocalFilesystem.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-globalization/CDVGlobalization.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-globalization/CDVGlobalization.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCAlbumPickerController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCAlbumPickerController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCAsset.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCAsset.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCAssetCell.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCAssetCell.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCAssetPickerFilterDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCAssetSelectionDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCAssetTablePicker.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCAssetTablePicker.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCImagePickerController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/ELCImagePickerController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/SOSPicker.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-image-picker/SOSPicker.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-inappbrowser/CDVInAppBrowser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-inappbrowser/CDVInAppBrowser.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GLProgram.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImage.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImage3x3ConvolutionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImage3x3TextureSamplingFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageAdaptiveThresholdFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageAddBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageAlphaBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageAmatorkaFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageAverageColor.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageAverageLuminanceThresholdFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageBilateralFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageBoxBlurFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageBrightnessFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageBuffer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageBulgeDistortionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageCGAColorspaceFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageCannyEdgeDetectionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageChromaKeyBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageChromaKeyFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageClosingFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageColorBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageColorBurnBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageColorConversion.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageColorDodgeBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageColorInvertFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageColorLocalBinaryPatternFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageColorMatrixFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageColorPackingFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageColourFASTFeatureDetector.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageColourFASTSamplingOperation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageContext.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageContrastFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageCropFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageCrosshairGenerator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageCrosshatchFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageDarkenBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageDifferenceBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageDilationFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageDirectionalNonMaximumSuppressionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageDirectionalSobelEdgeDetectionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageDissolveBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageDivideBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageEmbossFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageErosionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageExclusionBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageExposureFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageFASTCornerDetectionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageFalseColorFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageFilterGroup.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageFilterPipeline.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageFourInputFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageFramebuffer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageFramebufferCache.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageGammaFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageGaussianBlurFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageGaussianBlurPositionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageGaussianSelectiveBlurFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageGlassSphereFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageGrayscaleFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHSBFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHalftoneFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHardLightBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHarrisCornerDetectionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHazeFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHighPassFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHighlightShadowFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHighlightShadowTintFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHistogramEqualizationFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHistogramFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHistogramGenerator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHoughTransformLineDetector.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHueBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageHueFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageJFAVoronoiFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageKuwaharaFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageKuwaharaRadius3Filter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLanczosResamplingFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLaplacianFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLevelsFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLightenBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLineGenerator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLinearBurnBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLocalBinaryPatternFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLookupFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLowPassFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLuminanceRangeFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLuminanceThresholdFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLuminosity.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageLuminosityBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMaskFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMedianFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMissEtikateFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMonochromeFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMosaicFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMotionBlurFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMotionDetector.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMovie.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMovieComposition.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMovieWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageMultiplyBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageNobleCornerDetectionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageNonMaximumSuppressionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageNormalBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageOpacityFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageOpeningFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageOutput.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageOverlayBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageParallelCoordinateLineTransformFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePerlinNoiseFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePicture+TextureSubimage.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePicture.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePinchDistortionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePixellateFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePixellatePositionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePoissonBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePolarPixellateFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePolkaDotFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePosterizeFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImagePrewittEdgeDetectionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageRGBClosingFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageRGBDilationFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageRGBErosionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageRGBFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageRGBOpeningFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageRawDataInput.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageRawDataOutput.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSaturationBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSaturationFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageScreenBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSepiaFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSharpenFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageShiTomasiFeatureDetectionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSingleComponentGaussianBlurFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSketchFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSkinToneFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSmoothToonFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSobelEdgeDetectionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSoftEleganceFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSoftLightBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSolidColorGenerator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSourceOverBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSphereRefractionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageStillCamera.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageStretchDistortionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSubtractBlendFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageSwirlFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageTextureInput.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageTextureOutput.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageThreeInputFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageThresholdEdgeDetectionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageThresholdSketchFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageThresholdedNonMaximumSuppressionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageTiltShiftFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageToneCurveFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageToonFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageTransformFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageTwoInputCrossTextureSamplingFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageTwoInputFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageTwoPassFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageTwoPassTextureSamplingFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageUIElement.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageUnsharpMaskFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageVibranceFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageVideoCamera.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageView.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageVignetteFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageVoronoiConsumerFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageWeakPixelInclusionFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageWhiteBalanceFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageXYDerivativeFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageZoomBlurFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/GPUImageHeaders/GPUImageiOSBlurFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/IGAssetsCollectionViewCell.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/IGAssetsCollectionViewCell.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/IGAssetsPicker.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/IGAssetsPickerViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/IGAssetsPickerViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/IGCropView.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/IGCropView.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/InstagramAssetsPicker.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/InstagramAssetsPicker.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-instagram-assets-picker/libGPUImage.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-media-capture/CDVCapture.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-media-capture/CDVCapture.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-video-editor/SDAVAssetExportSession.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-video-editor/SDAVAssetExportSession.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-video-editor/VideoEditor.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-video-editor/VideoEditor.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-x-socialsharing/NSString+URLEncoding.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-x-socialsharing/NSString+URLEncoding.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-x-socialsharing/SocialSharing.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/cordova-plugin-x-socialsharing/SocialSharing.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/ionic-plugin-keyboard/IonicKeyboard.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Plugins/ionic-plugin-keyboard/IonicKeyboard.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/controls_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/controls_bg@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/controls_bg@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/controls_bg~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/de.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/en.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/es.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/microphone-568h@2x~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/microphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/microphone@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/microphone@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/microphone~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/record_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/record_button@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/record_button@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/record_button~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/recording_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/recording_bg@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/recording_bg@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/recording_bg~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/se.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/stop_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/stop_button@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/stop_button@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVCapture.bundle/stop_button~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/CDVNotification.bundle/beep.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/ELCAlbumPickerController.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/ELCAssetPicker.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/ELCAssetTablePicker.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/InstagramAssetsPicker.bundle/Start@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/InstagramAssetsPicker.bundle/back@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/InstagramAssetsPicker.bundle/cameraroll-picker-grip@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/InstagramAssetsPicker.bundle/straighten-grid@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/InstagramAssetsPicker.bundle/video_icon@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/Overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/Overlay@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-40@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-50@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-60.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-60@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-72.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-72@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-76.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-76@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon-small@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/icons/icon@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/splash/Default-568h@2x~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/splash/Default-667h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/splash/Default-736h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/splash/Default-Landscape-736h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/splash/Default-Landscape@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/splash/Default-Landscape~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/splash/Default-Portrait@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/splash/Default-Portrait~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/splash/Default@2x~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/Resources/splash/Default~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MetaGIF/main.m" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/controllers/app-controller.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/controllers/app-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/app-controller.js" afterPath="$PROJECT_DIR$/www/js/controllers/app-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/services/makeID-service.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/services/makeID-service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/makeID-service.js" afterPath="$PROJECT_DIR$/www/js/services/makeID-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/ios/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/libraries/gifshot.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/libraries/gifshot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/libraries/gifshot.js" afterPath="$PROJECT_DIR$/www/js/libraries/gifshot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/controllers/photo-controller.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/controllers/photo-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/photo-controller.js" afterPath="$PROJECT_DIR$/www/js/controllers/photo-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/controllers/settings-controller.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/controllers/settings-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/settings-controller.js" afterPath="$PROJECT_DIR$/www/js/controllers/settings-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/controllers/video-controller.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/controllers/video-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/video-controller.js" afterPath="$PROJECT_DIR$/www/js/controllers/video-controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -34,29 +431,21 @@
       <file leaf-file-name="video-controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/controllers/video-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3243243">
-              <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.6455224">
+              <caret line="218" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makeID-service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/services/makeID-service.js">
+      <file leaf-file-name="gifshot.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/libraries/gifshot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3333333">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app-controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/controllers/app-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.592592">
-              <caret line="117" column="18" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="18" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1722" column="22" selection-start-line="1722" selection-start-column="22" selection-end-line="1722" selection-end-column="22" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,7 +453,7 @@
       <file leaf-file-name="trim.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/trim.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -75,7 +464,7 @@
         <entry file="file://$PROJECT_DIR$/www/js/controllers/photo-controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="623" column="6" selection-start-line="623" selection-start-column="6" selection-end-line="626" selection-end-column="8" />
+              <caret line="268" column="33" selection-start-line="268" selection-start-column="33" selection-end-line="268" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -105,6 +494,7 @@
         <option value="$PROJECT_DIR$/www/css/slider.css" />
         <option value="$PROJECT_DIR$/www/js/controllers/app-controller.js" />
         <option value="$PROJECT_DIR$/www/js/services/makeID-service.js" />
+        <option value="$PROJECT_DIR$/www/js/libraries/gifshot.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/video-controller.js" />
       </list>
     </option>
@@ -112,11 +502,6 @@
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <gulpfiles>
-      <GulpfileState>
-        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
-      </GulpfileState>
-    </gulpfiles>
   </component>
   <component name="NamedScopeManager">
     <order />
@@ -396,8 +781,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25250357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25608012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -411,6 +795,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -436,6 +821,54 @@
     <entry file="file://$PROJECT_DIR$/www/js/controllers/video-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/services/makeID-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/app-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="18" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/trim.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/photo-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="623" column="6" selection-start-line="623" selection-start-column="6" selection-end-line="626" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/video-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding />
         </state>
@@ -445,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -461,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -469,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -514,7 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -548,19 +976,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/photo-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="623" column="6" selection-start-line="623" selection-start-column="6" selection-end-line="626" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/player.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17307693">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -574,7 +993,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers/app-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.592592">
+        <state vertical-scroll-proportion="0.0">
           <caret line="117" column="18" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="18" />
           <folding />
         </state>
@@ -582,16 +1001,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services/makeID-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/photo-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="268" column="33" selection-start-line="268" selection-start-column="33" selection-end-line="268" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/libraries/gifshot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1722" column="22" selection-start-line="1722" selection-start-column="22" selection-end-line="1722" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers/video-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3243243">
-          <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.6455224">
+          <caret line="218" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
           <folding />
         </state>
       </provider>

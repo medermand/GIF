@@ -40,7 +40,19 @@ console.log("trim state has entered so that video controller has worked!");
 
 
     var videoRecord = function () {
+<<<<<<< HEAD
         var options = {limit: 1, duration: }150;
+=======
+<<<<<<< Updated upstream
+        var options = {limit: 1, duration: 15};
+=======
+<<<<<<< HEAD
+        var options = {limit: 1, duration: }150;
+=======
+        var options = {limit: 1, duration: 15};
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+>>>>>>> origin/master
         $ionicPlatform.ready(function () {
             $cordovaCapture.captureVideo(options).then(function (videoData) {
                 // Success! Video data is here
@@ -158,7 +170,19 @@ console.log("trim state has entered so that video controller has worked!");
                 console.log('video is converted to GIF');
                 $scope.gifSrc = obj.image;
 
+<<<<<<< HEAD
                 // console.log( $scope.gifSrc);
+=======
+<<<<<<< Updated upstream
+                //console.log( $scope.gifSrc);
+=======
+<<<<<<< HEAD
+                // console.log( $scope.gifSrc);
+=======
+                //console.log( $scope.gifSrc);
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+>>>>>>> origin/master
 
                 console.log('this is decodedData');
                 gifshot.getVideoImages(function(images){
@@ -226,6 +250,17 @@ console.log("trim state has entered so that video controller has worked!");
                 });
     }
 
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+>>>>>>> origin/master
 })

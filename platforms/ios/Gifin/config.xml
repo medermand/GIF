@@ -103,6 +103,21 @@
     <splash height="1024" src="resources/ios/splash/Default-Portrait~ipad.png" width="768" />
     <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
     <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
+<<<<<<< Updated upstream:platforms/ios/Gifin/config.xml
+=======
+
+    <name>Gifin</name>
+    <description>
+        Gifin is a cross platform application that provides users a set of great tools to create, play, edit and share gif files.
+    </description>
+    <author email="giffinteam@gmail.com" href="">
+      Talha Şeker
+      Meder Kutbidin Uulu
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+
+>>>>>>> Stashed changes:platforms/ios/Gifin/config.xml
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="DisallowOverscroll" value="true" />
@@ -117,6 +132,10 @@
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="CameraUsesGeolocation" value="false" />
+<<<<<<< Updated upstream:platforms/ios/Gifin/config.xml
+=======
+
+>>>>>>> Stashed changes:platforms/ios/Gifin/config.xml
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="SplashScreenDelay" value="2000" />

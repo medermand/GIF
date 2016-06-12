@@ -40,7 +40,19 @@ console.log("trim state has entered so that video controller has worked!");
 
 
     var videoRecord = function () {
+<<<<<<< HEAD
         var options = {limit: 1, duration: }150;
+=======
+<<<<<<< Updated upstream
+        var options = {limit: 1, duration: 15};
+=======
+<<<<<<< HEAD
+        var options = {limit: 1, duration: }150;
+=======
+        var options = {limit: 1, duration: 15};
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+>>>>>>> origin/master
         $ionicPlatform.ready(function () {
             $cordovaCapture.captureVideo(options).then(function (videoData) {
                 // Success! Video data is here
@@ -158,6 +170,7 @@ console.log("trim state has entered so that video controller has worked!");
                 console.log('video is converted to GIF');
                 $scope.gifSrc = obj.image;
 
+<<<<<<< HEAD
                 // console.log( $scope.gifSrc);
 
                 console.log('this is decodedData');
@@ -165,6 +178,44 @@ console.log("trim state has entered so that video controller has worked!");
                     $state.go('app.photo', {id: 3, images: images});
                     $ionicLoading.hide();
                 });
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+                // console.log( $scope.gifSrc);
+
+                console.log('this is decodedData');
+                gifshot.getVideoImages(function(images){
+                    $state.go('app.photo', {id: 3, images: images});
+                    $ionicLoading.hide();
+                });
+=======
+>>>>>>> Stashed changes
+                //console.log( $scope.gifSrc);
+
+                console.log('this is decodedData');
+                //save the file to a particular location.
+                var fileName = makeID();
+
+                /*there are two ways of getting images from a gif:
+                1.Get frames directly from gifshot library
+                2.Convert the base64 gif to other format(like download.gif) and 
+                    save it to somewhere and link it to gifparser.
+                */
+                var decodedData = window.atob(encodedData);
+                console.log(decodedData);
+                saveFile(fileName, decodedData, function(){
+                    console.log('the file is saved');
+                    
+                    var gifDirectory = cordova.file.dataDirectory + "fileName/" + decodedData;
+                    parseGIF(gifDirectory);
+
+                })
+                //$state.go('app.video');
+
+                console.log("there used to be the image object but that works fine so...");    
+>>>>>>> origin/master
+>>>>>>> origin/master
 
             }
         });
@@ -226,6 +277,17 @@ console.log("trim state has entered so that video controller has worked!");
                 });
     }
 
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+>>>>>>> origin/master
 })
