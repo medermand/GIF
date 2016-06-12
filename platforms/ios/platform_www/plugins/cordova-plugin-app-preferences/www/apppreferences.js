@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-app-preferences.apppreferences", function(require, exports, module) { var platform = {};
+cordova.define("cordova-plugin-app-preferences.apppreferences", function(require, exports, module) {
+var platform = {};
 
 if (typeof AppPreferencesLocalStorage === "undefined") {
 	try {

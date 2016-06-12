@@ -17,7 +17,7 @@
  under the License.
  */
 //
-// Prefix header for all source files of the 'giferThree' target in the 'giferThree' project
+// Prefix header for all source files of the 'Gifin' target in the 'Gifin' project
 //
 
 #ifdef __OBJC__

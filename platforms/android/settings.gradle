@@ -2,4 +2,4 @@
 include ":"
 include ":CordovaLib"
 include ":cordova-plugin-video-editor:android-ffmpeg-java"
-project(":cordova-plugin-video-editor:android-ffmpeg-java").projectDir = new File("cordova-plugin-video-editor/giferthree206123-android-ffmpeg-java")
+project(":cordova-plugin-video-editor:android-ffmpeg-java").projectDir = new File("cordova-plugin-video-editor/giferthree-android-ffmpeg-java")

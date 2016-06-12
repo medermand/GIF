@@ -7,67 +7,67 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-admobpro": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
         "cordova-plugin-app-preferences": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-apprate": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-camera": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-email-composer": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-image-picker": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-instagram-assets-picker": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-media-capture": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-x-socialsharing": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
-        "cordova-plugin-admobpro": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         }
     },
     "dependent_plugins": {
+        "cordova-plugin-extension": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-globalization": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-video-editor": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-extension": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         }
     }
 }

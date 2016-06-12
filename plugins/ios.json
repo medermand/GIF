@@ -4,219 +4,70 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"AppPreferences\"><param name=\"ios-package\" value=\"AppPreferences\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Camera\"><param name=\"ios-package\" value=\"CDVCamera\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"CameraUsesGeolocation\" value=\"false\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"File\"><param name=\"ios-package\" value=\"CDVFile\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"ImagePicker\"><param name=\"ios-package\" value=\"SOSPicker\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Capture\"><param name=\"ios-package\" value=\"CDVCapture\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"VideoEditor\"><param name=\"ios-package\" value=\"VideoEditor\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"InstagramAssetsPicker\"><param name=\"ios-package\" value=\"InstagramAssetsPicker\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "framework": {
-                "parents": {
-                    "ImageIO.framework": [
-                        {
-                            "xml": true,
-                            "count": 1
-                        }
-                    ],
-                    "CoreLocation.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "CoreGraphics.framework": [
-                        {
-                            "xml": false,
-                            "count": 4
-                        }
-                    ],
-                    "AssetsLibrary.framework": [
-                        {
-                            "xml": false,
-                            "count": 4
-                        }
-                    ],
-                    "MobileCoreServices.framework": [
-                        {
-                            "xml": false,
-                            "count": 3
-                        }
-                    ],
-                    "AVFoundation.framework": [
-                        {
-                            "xml": false,
-                            "count": 3
-                        }
-                    ],
-                    "MediaPlayer.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "CoreVideo.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "Foundation.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "UIKit.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "Photos.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "CoreMedia.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "OpenGLES.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "QuartzCore.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "*-Info.plist": {
-                "parents": {
-                    "NSLocationWhenInUseUsageDescription": [
-                        {
-                            "xml": "<string />",
-                            "count": 1
-                        }
-                    ]
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-admobpro": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
         "cordova-plugin-app-preferences": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-camera": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-image-picker": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-media-capture": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-video-editor": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-instagram-assets-picker": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
-        },
-        "cordova-plugin-email-composer": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-apprate": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
+        "cordova-plugin-email-composer": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
+        "cordova-plugin-image-picker": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
+        "cordova-plugin-instagram-assets-picker": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-x-socialsharing": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
-        "cordova-plugin-admobpro": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         }
     },
     "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        "cordova-plugin-extension": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-globalization": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         },
-        "cordova-plugin-extension": {
-            "PACKAGE_NAME": "com.ionicframework.giferthree206123"
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
+        },
+        "cordova-plugin-video-editor": {
+            "PACKAGE_NAME": "com.ionicframework.giferthree"
         }
     }
 }

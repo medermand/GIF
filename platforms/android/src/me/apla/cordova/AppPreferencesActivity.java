@@ -1,6 +1,6 @@
 package me.apla.cordova;
 
-import com.ionicframework.giferthree206123.R;
+import com.ionicframework.giferthree.R;
 
 
 import android.app.Activity;

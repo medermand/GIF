@@ -1,6 +1,13 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "file": "plugins/cordova-plugin-admobpro/www/AdMob.js",
+        "id": "cordova-plugin-admobpro.AdMob",
+        "clobbers": [
+            "window.AdMob"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-app-preferences/www/apppreferences.js",
         "id": "cordova-plugin-app-preferences.apppreferences",
         "clobbers": [
@@ -327,14 +334,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
-        "id": "ionic-plugin-keyboard.keyboard",
-        "clobbers": [
-            "cordova.plugins.Keyboard"
-        ],
-        "runs": true
-    },
-    {
         "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
         "id": "cordova-plugin-x-socialsharing.SocialSharing",
         "clobbers": [
@@ -342,16 +341,19 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-admobpro/www/AdMob.js",
-        "id": "cordova-plugin-admobpro.AdMob",
+        "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+        "id": "ionic-plugin-keyboard.keyboard",
         "clobbers": [
-            "window.AdMob"
-        ]
+            "cordova.plugins.Keyboard"
+        ],
+        "runs": true
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
+    "cordova-plugin-extension": "1.5.1",
+    "cordova-plugin-admobpro": "2.18.0",
     "cordova-plugin-app-preferences": "0.7.7",
     "cordova-plugin-dialogs": "1.2.1",
     "cordova-plugin-globalization": "1.0.3",
@@ -368,10 +370,8 @@ module.exports.metadata =
     "cordova-plugin-media-capture": "1.3.0",
     "cordova-plugin-video-editor": "1.0.9",
     "cordova-plugin-whitelist": "1.2.2",
-    "ionic-plugin-keyboard": "2.2.0",
     "cordova-plugin-x-socialsharing": "5.1.1",
-    "cordova-plugin-extension": "1.5.1",
-    "cordova-plugin-admobpro": "2.18.0"
+    "ionic-plugin-keyboard": "2.2.0"
 };
 // BOTTOM OF METADATA
 });

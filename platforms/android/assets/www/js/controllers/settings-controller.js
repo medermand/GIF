@@ -1,8 +1,21 @@
 //angular.module('gifer.settings-controller', [])
 
-controllers.controller('SettingsCtrl', function($rootScope,$scope, $ionicPlatform, $ionicPopup, $ionicPopover, $cordovaPreferences, $cordovaEmailComposer, $cordovaAppRate) {
+controllers.controller('SettingsCtrl', function($rootScope, $scope, $ionicPlatform, $ionicPopup, $ionicPopover, $cordovaPreferences, $cordovaEmailComposer, $cordovaAppRate, $cordovaGoogleAds, $window) {
 
   $ionicPlatform.ready (function () {
+
+    try {
+        console.log('Show Banner Ad');       
+        $cordovaGoogleAds.createBanner({
+            adId: $rootScope.adMobId.admob_banner_key,
+            position: $rootScope.adMobPosition.BOTTOM_CENTER,
+            isTesting: true,
+            autoShow: true
+        });
+    } catch (e) {
+        alert(e);
+    }
+    
     $cordovaPreferences.fetch('isFirstTime')
       .success(function(value) {
         if (value == true) {
@@ -112,7 +125,7 @@ controllers.controller('SettingsCtrl', function($rootScope,$scope, $ionicPlatfor
   $scope.mailThing = function(){
     $cordovaEmailComposer.isAvailable().then(function() {
       var email = {
-        to: 'gifer@gmail.com',
+        to: 'giffinteam@gmail.com',
         cc: '',
         bcc: [],
         attachments: [],

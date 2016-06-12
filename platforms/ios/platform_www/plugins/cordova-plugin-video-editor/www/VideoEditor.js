@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-video-editor.VideoEditor", function(require, exports, module) { //
+cordova.define("cordova-plugin-video-editor.VideoEditor", function(require, exports, module) {
+//
 //  VideoEditor.js
 //
 //  Created by Josh Bavari on 01-14-2014

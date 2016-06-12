@@ -1,5 +1,5 @@
 
-controllers.controller('BrowseCtrl', function($scope, $ionicPlatform, $cordovaFile, $timeout, $ionicModal, $ionicPopup, $cordovaSocialSharing) {
+controllers.controller('BrowseCtrl', function($scope, $rootScope, $ionicPlatform, $cordovaFile, $timeout, $ionicModal, $ionicPopup, $cordovaSocialSharing, $cordovaGoogleAds, $window) {
 
    $scope.imageSrcs = [];
    $scope.play = false;
@@ -29,6 +29,18 @@ controllers.controller('BrowseCtrl', function($scope, $ionicPlatform, $cordovaFi
 
     $scope.myWork = function(){
       $ionicPlatform.ready(function(){
+
+        try {
+            console.log('Show Banner Ad');       
+            $cordovaGoogleAds.createBanner({
+                adId: $rootScope.adMobId.admob_banner_key,
+                position: $rootScope.adMobPosition.BOTTOM_CENTER,
+                isTesting: true,
+                autoShow: true
+            });
+        } catch (e) {
+            alert(e);
+        }
 
         var images = getImages();
         
@@ -79,35 +91,80 @@ controllers.controller('BrowseCtrl', function($scope, $ionicPlatform, $cordovaFi
 
     $scope.shareTwitter = function(){
       $cordovaSocialSharing
-      .canShareVia('twitter', message, $scope.gifSrc, link)
-      .then(function(result) {
-            $cordovaSocialSharing
           .shareViaTwitter(message, $scope.gifSrc, link)
           .then(function(result) {
+            console.log("share via twitter is done!");
             // Success!
           }, function(err) {
             //ionicToast.show('An error occurred please try again later!', 'bottom', true, 3000);
+            console.log('An error occurred in twitter share service please try again later!');
           });
-      }, function(err) {
-        //ionicToast.show('Share service with Twitter is not available now!', 'bottom', true, 3000);
-      });
+      // $cordovaSocialSharing
+      // .canShareVia('twitter', message, 'img/ionic.png', link)
+      // .then(function(result) {
+      //       $cordovaSocialSharing
+      //     .shareViaTwitter(message, $scope.gifSrc, link)
+      //     .then(function(result) {
+      //       // Success!
+      //     }, function(err) {
+      //       //ionicToast.show('An error occurred please try again later!', 'bottom', true, 3000);
+      //       console.log('An error occurred in twitter share service please try again later!');
+      //     });
+      // }, function(err) {
+      //   //ionicToast.show('Share service with Twitter is not available now!', 'bottom', true, 3000);
+      //   console.log('Share service with Twitter is not available now!');
+      // });
     }
 
     $scope.shareFaceBook = function(){
       $cordovaSocialSharing
-      .canShareVia('facebook', message, $scope.gifSrc, link)
-      .then(function(result) {
-        // Success!
-          $cordovaSocialSharing
           .shareViaFacebook(message, $scope.gifSrc, link)
           .then(function(result) {
+            console.log("share via facebook is ok!");
             // Success!
           }, function(err) {
+            console.log("An error occured in facebook share service!");
             //ionicToast.show('An error occurred please try again later!', 'bottom', true, 3000);
           });
-      }, function(err) {
-        //ionicToast.show('Share service with FaceBook is not available now!', 'bottom', true, 3000);
-      });
+      // $cordovaSocialSharing
+      // .canShareVia('facebook', message, $scope.gifSrc, link)
+      // .then(function(result) {
+      //   // Success!
+      //     $cordovaSocialSharing
+      //     .shareViaFacebook(message, $scope.gifSrc, link)
+      //     .then(function(result) {
+      //       // Success!
+      //     }, function(err) {
+      //       //ionicToast.show('An error occurred please try again later!', 'bottom', true, 3000);
+      //     });
+      // }, function(err) {
+      //   //ionicToast.show('Share service with FaceBook is not available now!', 'bottom', true, 3000);
+      // });
+    }
+
+    $scope.shareWhatsApp = function(){
+      $cordovaSocialSharing
+          .shareViaWhatsApp(message, $scope.gifSrc, link)
+          .then(function(result) {
+            console.log("share via whatsapp is ok'");
+            // Success!
+          }, function(err) {
+            console.log("an error occured in whatsapp share service!");
+            //ionicToast.show('An error occurred please try again later!', 'bottom', true, 3000);
+          });
+    }
+
+    $scope.shareInstagram = function(){
+      console.log("share via instagram has entered!");
+      $cordovaSocialSharing
+          .shareViaInstagram(message, $scope.gifSrc)
+          .then(function(result) {
+            console.log("share via instagram is ok!");
+            // Success!
+          }, function(err) {
+            console.log("an error occured in instagram share service");
+            //ionicToast.show('An error occurred please try again later!', 'bottom', true, 3000);
+          });
     }
 
     $scope.shareEmail = function(){

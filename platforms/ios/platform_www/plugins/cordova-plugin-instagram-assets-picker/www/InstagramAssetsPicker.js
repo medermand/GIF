@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-instagram-assets-picker.InstagramAssetsPicker", function(require, exports, module) { //
+cordova.define("cordova-plugin-instagram-assets-picker.InstagramAssetsPicker", function(require, exports, module) {
+//
 //  InstagramAssetsPicker.js
 //
 //  Created by Ross Martin on 2-25-2016
