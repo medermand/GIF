@@ -39,7 +39,7 @@ console.log("trim state has entered so that video controller has worked!");
 
 
     var videoRecord = function () {
-        var options = {limit: 1, duration: }150;
+        var options = {limit: 1, duration: 15};
         $ionicPlatform.ready(function () {
             $cordovaCapture.captureVideo(options).then(function (videoData) {
                 // Success! Video data is here
@@ -145,7 +145,7 @@ console.log("trim state has entered so that video controller has worked!");
         console.log('crateGIF is called');
         $ionicLoading.show({
             scope: $scope,
-            template: '<progress max="1" value="{{progress}}" class=""></progress>Creating a GIF...'
+            template: '<progress max="1" value="{{progress}}" class=""></progress>Creating GIF...'
         })
         $scope.gifOptions.video = $rootScope.trimmedVideoPath;
         //{'video': $rootScope.trimmedVideoPath}
@@ -155,7 +155,7 @@ console.log("trim state has entered so that video controller has worked!");
                 console.log('video is converted to GIF');
                 $scope.gifSrc = obj.image;
 
-                console.log( $scope.gifSrc);
+                //console.log( $scope.gifSrc);
 
                 console.log('this is decodedData');
                 //save the file to a particular location.
@@ -238,7 +238,5 @@ console.log("trim state has entered so that video controller has worked!");
                     console.log("after!!!!!!!!!!!! the state app photo called");
                 });
     }
-
-    
 
 })

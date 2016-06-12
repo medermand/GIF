@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E4B6D2B7AE4B57AE63DE39 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 249136E29FAB4A21809F80A9 /* CDVDevice.m */; };
 		04472272776049BC94252B52 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C9D040F795473BBE1D4BC0 /* GoogleMobileAds.framework */; };

@@ -775,13 +775,14 @@ controllers.controller('PhotoCtrl', function ($scope, $rootScope, $state, $state
 
               console.log('success');
               addImage(name);
+              $state.go('app.browse',{});
 
             }, function (error) {
               // error
               console.log('create:' + "error");
             });
         });
-        $state.go('app.browse',{});
+        
       }
     }
   }
