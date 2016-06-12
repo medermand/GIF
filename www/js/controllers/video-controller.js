@@ -8,6 +8,7 @@ console.log("trim state has entered so that video controller has worked!");
     var outputFilePath = "trimmedVideo-" + makeID.getNewID;
     var sup1;
     $rootScope.images = [];
+    $rootScope.videoImages = [];
     $scope.progress = 0;
     var i  = 0;
     //$rootScope.trimmedVideoPath = '';
@@ -39,7 +40,15 @@ console.log("trim state has entered so that video controller has worked!");
 
 
     var videoRecord = function () {
+<<<<<<< Updated upstream
         var options = {limit: 1, duration: 15};
+=======
+<<<<<<< HEAD
+        var options = {limit: 1, duration: }150;
+=======
+        var options = {limit: 1, duration: 15};
+>>>>>>> origin/master
+>>>>>>> Stashed changes
         $ionicPlatform.ready(function () {
             $cordovaCapture.captureVideo(options).then(function (videoData) {
                 // Success! Video data is here
@@ -149,35 +158,29 @@ console.log("trim state has entered so that video controller has worked!");
         })
         $scope.gifOptions.video = $rootScope.trimmedVideoPath;
         //{'video': $rootScope.trimmedVideoPath}
+
+
         gifshot.createGIF($scope.gifOptions , function (obj) {
 
             if (!obj.error) {
                 console.log('video is converted to GIF');
                 $scope.gifSrc = obj.image;
 
+<<<<<<< Updated upstream
                 //console.log( $scope.gifSrc);
+=======
+<<<<<<< HEAD
+                // console.log( $scope.gifSrc);
+=======
+                //console.log( $scope.gifSrc);
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 
                 console.log('this is decodedData');
-                //save the file to a particular location.
-                var fileName = makeID();
-
-                /*there are two ways of getting images from a gif:
-                1.Get frames directly from gifshot library
-                2.Convert the base64 gif to other format(like download.gif) and 
-                    save it to somewhere and link it to gifparser.
-                */
-                var decodedData = window.atob(encodedData);
-                console.log(decodedData);
-                saveFile(fileName, decodedData, function(){
-                    console.log('the file is saved');
-                    
-                    var gifDirectory = cordova.file.dataDirectory + "fileName/" + decodedData;
-                    parseGIF(gifDirectory);
-
-                })
-                //$state.go('app.video');
-
-                console.log("there used to be the image object but that works fine so...");    
+                gifshot.getVideoImages(function(images){
+                    $state.go('app.photo', {id: 3, images: images});
+                    $ionicLoading.hide();
+                });
 
             }
         });
@@ -239,4 +242,12 @@ console.log("trim state has entered so that video controller has worked!");
                 });
     }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 })

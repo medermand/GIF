@@ -49,7 +49,15 @@
       </dict>
     </dict>
     <key>CFBundleIdentifier</key>
+<<<<<<< Updated upstream
     <string>com.ionicframework.giferthree</string>
+=======
+<<<<<<< HEAD
+    <string>com.ionicframework.giferthree206123</string>
+=======
+    <string>com.ionicframework.giferthree</string>
+>>>>>>> origin/master
+>>>>>>> Stashed changes
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
@@ -74,11 +82,25 @@
       <true/>
     </dict>
     <key>NSLocationWhenInUseUsageDescription</key>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    <string></string>
+    <key>NSMainNibFile</key>
+    <string></string>
+    <key>NSMainNibFile~ipad</key>
+    <string></string>
+=======
+>>>>>>> Stashed changes
     <string/>
     <key>NSMainNibFile</key>
     <string/>
     <key>NSMainNibFile~ipad</key>
     <string/>
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
     <key>UILaunchImages</key>
     <array>
       <dict>
