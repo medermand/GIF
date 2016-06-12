@@ -14,12 +14,21 @@
     <dict/>
     <key>CFBundleIdentifier</key>
 <<<<<<< Updated upstream
+<<<<<<< HEAD
     <string>com.ionicframework.giferthree</string>
 =======
 <<<<<<< HEAD
     <string>com.ionicframework.giferthree206123</string>
 =======
     <string>com.ionicframework.giferthree</string>
+=======
+    <string>com.ionicframework.giferthree</string>
+=======
+<<<<<<< HEAD
+    <string>com.ionicframework.giferthree206123</string>
+=======
+    <string>com.ionicframework.giferthree</string>
+>>>>>>> origin/master
 >>>>>>> origin/master
 >>>>>>> Stashed changes
     <key>CFBundleInfoDictionaryVersion</key>

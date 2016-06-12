@@ -41,8 +41,11 @@ console.log("trim state has entered so that video controller has worked!");
 
     var videoRecord = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var options = {limit: 1, duration: }150;
 =======
+=======
+>>>>>>> origin/master
 <<<<<<< Updated upstream
         var options = {limit: 1, duration: 15};
 =======
@@ -52,6 +55,9 @@ console.log("trim state has entered so that video controller has worked!");
         var options = {limit: 1, duration: 15};
 >>>>>>> origin/master
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
         $ionicPlatform.ready(function () {
             $cordovaCapture.captureVideo(options).then(function (videoData) {
@@ -171,7 +177,19 @@ console.log("trim state has entered so that video controller has worked!");
                 $scope.gifSrc = obj.image;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // console.log( $scope.gifSrc);
+=======
+<<<<<<< Updated upstream
+                //console.log( $scope.gifSrc);
+=======
+<<<<<<< HEAD
+                // console.log( $scope.gifSrc);
+=======
+                //console.log( $scope.gifSrc);
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+>>>>>>> origin/master
 =======
 <<<<<<< Updated upstream
                 //console.log( $scope.gifSrc);
@@ -251,9 +269,12 @@ console.log("trim state has entered so that video controller has worked!");
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
+=======
+>>>>>>> origin/master
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -262,5 +283,8 @@ console.log("trim state has entered so that video controller has worked!");
 =======
 >>>>>>> origin/master
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 })
